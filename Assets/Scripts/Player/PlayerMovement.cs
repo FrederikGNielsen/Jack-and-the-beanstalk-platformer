@@ -24,6 +24,20 @@ public class PlayerMovement : MonoBehaviour
         //Left and Right input
         Horizontal = Input.GetAxisRaw("Horizontal");
 
+        if(Horizontal > 0)
+        {
+            //Walking right
+        }
+        if (Horizontal < 0)
+        {
+            //Walking Left
+        }
+        if(Horizontal == 0)
+        {
+            //Standing still
+        }
+
+
         //Checks if player is grounded
         if (Physics2D.OverlapBox(groundcheck.position, new Vector2(0.45f, 0.01f), 0, groundLayer))
         {

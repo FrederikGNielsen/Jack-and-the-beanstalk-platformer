@@ -7,6 +7,9 @@ public class Projectile : MonoBehaviour
     public Rigidbody2D rb;
     bool hasHit;
 
+    private bool sleeping;
+    private float fallTime;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -17,12 +20,19 @@ public class Projectile : MonoBehaviour
     {
         float angle = Mathf.Atan2(rb.velocity.y, rb.velocity.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        if(transform.position.y < -100)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        hasHit = true;
-        rb.velocity = Vector3.zero;
-        rb.isKinematic = true;
+        if(collision.transform.tag != "Player")
+        {
+            rb.velocity = Vector3.zero;
+            rb.isKinematic = true;
+            Destroy(this.gameObject);
+        }
     }
 }
