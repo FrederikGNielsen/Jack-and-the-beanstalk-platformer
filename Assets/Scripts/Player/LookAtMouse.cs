@@ -18,16 +18,16 @@ public class LookAtMouse : MonoBehaviour
 
         if(mousePos.x > Screen.width / 2.0f)
         {
+            GetComponent<playerAttack>().AttackDirection(true);
             Vector3 localScale = transform.localScale;
             localScale.x = 0.5f;
             transform.localScale = localScale;
-            GetComponent<playerAttack>().AttackDirection(true);
         } else
         {
+            GetComponent<playerAttack>().AttackDirection(false);
             Vector3 localScale = transform.localScale;
             localScale.x = -0.5f;
             transform.localScale = localScale;
-            GetComponent<playerAttack>().AttackDirection(false);
         }
     }
 }
