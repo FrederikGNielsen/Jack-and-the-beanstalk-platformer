@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4e71e0ea17ada2440a6c67827cb56722
+guid: 9daf0ac68e427964891b54a9e605cd47
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: q0dtsdh4_0
+      name: New_Piskel_2_1_0
       rect:
         serializedVersion: 2
         x: 3
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66671d092e57ff748bf06f13f8035ec0
-      internalID: 964450075
+      spriteID: 9a2f9b055d179cb4cb4fc8d8c2add826
+      internalID: -2079186848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: q0dtsdh4_1
+      name: New_Piskel_2_1_1
       rect:
         serializedVersion: 2
         x: 24
@@ -139,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df3ef3c6a8affee498941c4d272167a1
-      internalID: -1972571692
+      spriteID: 6b8aeb7f46cde824f807843b639a85dd
+      internalID: 1880920271
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: q0dtsdh4_2
+      name: New_Piskel_2_1_2
       rect:
         serializedVersion: 2
         x: 45
@@ -160,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc101676f0d901f4daf48762ae8ea898
-      internalID: -1663244829
+      spriteID: 6d7700206e0d2ad45815e43194a39723
+      internalID: -275530896
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: q0dtsdh4_3
+      name: New_Piskel_2_1_3
       rect:
         serializedVersion: 2
         x: 3
@@ -181,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04d8b6b2fb6dc2649b1f91780e873f37
-      internalID: -1005335134
+      spriteID: a8cecc5c6eb1176468c1578a042f5612
+      internalID: -820154454
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: q0dtsdh4_4
+      name: New_Piskel_2_1_4
       rect:
         serializedVersion: 2
         x: 24
@@ -202,14 +202,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89ec1e0b98289a64e8a3c3da4683dec9
-      internalID: 21283379
+      spriteID: 97139a53b2570514188ba992b06367b2
+      internalID: -551959872
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: q0dtsdh4_5
+      name: New_Piskel_2_1_5
       rect:
         serializedVersion: 2
         x: 45
@@ -223,14 +223,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 754269c180bb4134282f75a1405601fe
-      internalID: -77831099
+      spriteID: d6575119243288944abea47067896160
+      internalID: 800943641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: q0dtsdh4_6
+      name: New_Piskel_2_1_6
       rect:
         serializedVersion: 2
         x: 3
@@ -244,14 +244,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 668da56cb983aae418308f81b28803fb
-      internalID: -1855956133
+      spriteID: 5dd331bd7b01e8a47adcd78ea40297cd
+      internalID: 1580837823
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: q0dtsdh4_7
+      name: New_Piskel_2_1_7
       rect:
         serializedVersion: 2
         x: 24
@@ -265,14 +265,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7dc91ee59740424689674c7f2b804f8
-      internalID: 892798198
+      spriteID: 476e4267d94c5bc4cb8ff7c0f37c9b41
+      internalID: -1080295942
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: q0dtsdh4_8
+      name: New_Piskel_2_1_8
       rect:
         serializedVersion: 2
         x: 45
@@ -286,14 +286,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb73cecc11305314cac1b86ba5640320
-      internalID: -1531446204
+      spriteID: 26981f755c3b92a4ea98f5b930d396d3
+      internalID: -768861958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: q0dtsdh4_9
+      name: New_Piskel_2_1_9
       rect:
         serializedVersion: 2
         x: 3
@@ -307,14 +307,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cd616c1546c6124994fc9e1e28dfc20
-      internalID: 1244673063
+      spriteID: 5ad1e8e58faa2924da7222d0a9813eec
+      internalID: 14431442
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: q0dtsdh4_10
+      name: New_Piskel_2_1_11
       rect:
         serializedVersion: 2
         x: 45
@@ -328,14 +328,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60689d7335c10b947bd9804755fc88ed
-      internalID: 270821795
+      spriteID: 0a6d299705b0cb741a90957fccd10306
+      internalID: 991699089
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: q0dtsdh4_11
+      name: New_Piskel_2_1_12
       rect:
         serializedVersion: 2
         x: 3
@@ -349,14 +349,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c15baf9eb7ab4046ac0cf0efa615347
-      internalID: 906277563
+      spriteID: e4717228cc9e1c3469a760e287f945fa
+      internalID: -2083121300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: q0dtsdh4_12
+      name: New_Piskel_2_1_13
       rect:
         serializedVersion: 2
         x: 24
@@ -370,14 +370,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f7a652c63c869a4ea15386a516f5b16
-      internalID: 1203694372
+      spriteID: a5d73a76b54e0d94ab1ddad808b27a70
+      internalID: -559124797
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: q0dtsdh4_13
+      name: New_Piskel_2_1_14
       rect:
         serializedVersion: 2
         x: 45
@@ -391,20 +391,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f25d7093e2958124ba83550fce3116d1
-      internalID: -1431374666
+      spriteID: 6ef380843f49add49885051f253a8507
+      internalID: 1221791906
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: q0dtsdh4_14
+      name: New_Piskel_2_1_15
       rect:
         serializedVersion: 2
-        x: 2
-        y: 1
-        width: 4
-        height: 4
+        x: 3
+        y: 15
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -412,20 +412,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1460fa3e1b90279429e30c6311b6c49c
-      internalID: 257756759
+      spriteID: 34f4821855a4b0247b26c537dbff05ec
+      internalID: -46105436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: q0dtsdh4_15
+      name: New_Piskel_2_1_16
       rect:
         serializedVersion: 2
-        x: 8
-        y: 1
-        width: 4
-        height: 4
+        x: 24
+        y: 15
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -433,20 +433,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87a7e5b224af7fd4683e49b7fc7a48e4
-      internalID: -547862837
+      spriteID: 0e67f1d367cfcc646aefa1bf878b476f
+      internalID: -1415393760
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: q0dtsdh4_16
+      name: New_Piskel_2_1_17
       rect:
         serializedVersion: 2
-        x: 14
-        y: 1
-        width: 4
-        height: 4
+        x: 45
+        y: 14
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -454,29 +454,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5227e77586bcea4b93a30598f2ff881
-      internalID: 1906969939
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: q0dtsdh4_17
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 1
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 15ab3d9e84921a94e85b031313bfa66f
-      internalID: -731899422
+      spriteID: 4907c9d948bdc334ba4f9c3c2c463163
+      internalID: -1124841491
       vertices: []
       indices: 
       edges: []
@@ -492,24 +471,27 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      q0dtsdh4_3: -1005335134
-      q0dtsdh4_11: 906277563
-      q0dtsdh4_8: -1531446204
-      q0dtsdh4_13: -1431374666
-      q0dtsdh4_12: 1203694372
-      q0dtsdh4_7: 892798198
-      q0dtsdh4_1: -1972571692
-      q0dtsdh4_17: -731899422
-      q0dtsdh4_10: 270821795
-      q0dtsdh4_5: -77831099
-      q0dtsdh4_4: 21283379
-      q0dtsdh4_9: 1244673063
-      q0dtsdh4_0: 964450075
-      q0dtsdh4_15: -547862837
-      q0dtsdh4_6: -1855956133
-      q0dtsdh4_16: 1906969939
-      q0dtsdh4_2: -1663244829
-      q0dtsdh4_14: 257756759
+      New_Piskel_2_1_8: -768861958
+      New_Piskel_2_1_17: -1124841491
+      New_Piskel_2_1_15: -46105436
+      New_Piskel_2_1_3: -820154454
+      New_Piskel_2_1_11: 991699089
+      New_Piskel_2_1_9: 14431442
+      New_Piskel_2_1_16: -1415393760
+      New_Piskel_2_1_5: 800943641
+      New_Piskel_2_1_14: 1221791906
+      New_Piskel_2_1_13: -559124797
+      New_Piskel_2_1_7: -1080295942
+      New_Piskel_2_1_4: -551959872
+      New_Piskel_2_1_2: -275530896
+      New_Piskel_2_1_6: 1580837823
+      New_Piskel_2_1_12: -2083121300
+      New_Piskel_2_1_20: 2000462134
+      New_Piskel_2_1_18: 706655963
+      New_Piskel_2_1_19: 410449919
+      New_Piskel_2_1_1: 1880920271
+      New_Piskel_2_1_0: -2079186848
+      New_Piskel_2_1_10: 308507911
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
