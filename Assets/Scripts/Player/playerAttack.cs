@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using Random = UnityEngine.Random;
+
 
 public class playerAttack : MonoBehaviour
 {
@@ -14,6 +16,12 @@ public class playerAttack : MonoBehaviour
     public LayerMask crateLayer;
     public float attackRange;
     public int damage;
+
+    //Shake
+    public GameObject MainCam;
+    public float minShake;
+    public float maxShake;
+
     void Start()
     {
         Knife.SetActive(true);
@@ -27,7 +35,6 @@ public class playerAttack : MonoBehaviour
         Knife.transform.position = transform.position;
         if(Input.GetButtonDown("Fire1"))
         {
-            
             Knife.SetActive(true);
             StartCoroutine(Sword());
 

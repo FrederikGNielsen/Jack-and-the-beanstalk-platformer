@@ -156,6 +156,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &131892666 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 449090327159794227, guid: f94b6aab2d5a0b243b0fdd53400653ad, type: 3}
+  m_PrefabInstance: {fileID: 449090326520752144}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &607354353
 GameObject:
   m_ObjectHideFlags: 0
@@ -5174,6 +5179,22 @@ PrefabInstance:
       propertyPath: mouseText
       value: 
       objectReference: {fileID: 607354355}
+    - target: {fileID: 449090325848263477, guid: f94b6aab2d5a0b243b0fdd53400653ad, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 131892666}
+    - target: {fileID: 449090325848263477, guid: f94b6aab2d5a0b243b0fdd53400653ad, type: 3}
+      propertyPath: MainCam
+      value: 
+      objectReference: {fileID: 131892666}
+    - target: {fileID: 449090325848263477, guid: f94b6aab2d5a0b243b0fdd53400653ad, type: 3}
+      propertyPath: maxShake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 449090325848263477, guid: f94b6aab2d5a0b243b0fdd53400653ad, type: 3}
+      propertyPath: minShake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 449090325931596799, guid: f94b6aab2d5a0b243b0fdd53400653ad, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -5317,6 +5338,10 @@ PrefabInstance:
     - target: {fileID: 449090327159794231, guid: f94b6aab2d5a0b243b0fdd53400653ad, type: 3}
       propertyPath: m_RenderPostProcessing
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 449090327159794232, guid: f94b6aab2d5a0b243b0fdd53400653ad, type: 3}
+      propertyPath: dampening
+      value: 1500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f94b6aab2d5a0b243b0fdd53400653ad, type: 3}
