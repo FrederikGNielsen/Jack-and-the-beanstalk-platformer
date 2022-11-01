@@ -5454,8 +5454,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e83ad8fb2553b3f43bc06f342423e126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 3.5
-  jumpHeight: 5
+  Speed: 4.201
+  jumpHeight: 6.9
   isGrounded: 0
   groundcheck: {fileID: 1642536852169093292}
   radius: 0.1
