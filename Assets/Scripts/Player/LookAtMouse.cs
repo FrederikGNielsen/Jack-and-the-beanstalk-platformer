@@ -20,13 +20,13 @@ public class LookAtMouse : MonoBehaviour
         {
             GetComponent<playerAttack>().AttackDirection(true);
             Vector3 localScale = transform.localScale;
-            localScale.x = 0.5f;
+            localScale.x = 1.5f;
             transform.localScale = localScale;
         } else
         {
             GetComponent<playerAttack>().AttackDirection(false);
             Vector3 localScale = transform.localScale;
-            localScale.x = -0.5f;
+            localScale.x = -1.5f;
             transform.localScale = localScale;
         }
     }

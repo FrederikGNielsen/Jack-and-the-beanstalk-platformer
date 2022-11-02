@@ -10,12 +10,16 @@ public class playerAttack : MonoBehaviour
 {
     public GameObject Knife;
     public Animator animator;
+    public Animator playerAnimator;
 
     public Transform attackPos;
     public LayerMask enemiesLayer;
     public LayerMask crateLayer;
     public float attackRange;
     public int damage;
+    public bool isAttacking;
+
+    private bool isTurnedRight;
 
     //Shake
     public GameObject MainCam;
@@ -36,6 +40,8 @@ public class playerAttack : MonoBehaviour
         if(Input.GetButtonDown("Fire1"))
         {
             Knife.SetActive(true);
+            playerAnimator.Play("PlayerAttack");
+            isAttacking = true;
             StartCoroutine(Sword());
 
             //Checks if hitting crate and damages if hit
@@ -53,9 +59,6 @@ public class playerAttack : MonoBehaviour
             {
                 
             }
-
-
-
         } 
     }
 
@@ -67,19 +70,21 @@ public class playerAttack : MonoBehaviour
 
     IEnumerator Sword()
     {
-        yield return new WaitForSeconds(0.08f);
+        yield return new WaitForSeconds(0.15f);
         Knife.SetActive(false);
-
+        isAttacking = false;
     }
 
     public void AttackDirection(bool right)
     {
-        if(right == true)
+        isTurnedRight = right;
+        if (right == true)
         {
             animator.SetFloat("Right", 0);
         } else
         {
             animator.SetFloat("Right", 1);
+
         }
     }
 }

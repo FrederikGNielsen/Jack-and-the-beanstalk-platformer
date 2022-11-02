@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Walk")]
-    private float Horizontal;
+    public float Horizontal;
     private bool facingRight = true;
     public float Speed;
 
@@ -17,24 +17,33 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundLayer;
 
     public Rigidbody2D rb;
-    
+
+    public Animator animator;
+
 
     void Update()
     {
         //Left and Right input
         Horizontal = Input.GetAxisRaw("Horizontal");
+        if(this.GetComponent<playerAttack>().isAttacking == false)
+        {
+            if (Horizontal > 0.25)
+            {
+                //Walking right
+                animator.Play("PlayerWalk");
 
-        if(Horizontal > 0)
-        {
-            //Walking right
-        }
-        if (Horizontal < 0)
-        {
-            //Walking Left
-        }
-        if(Horizontal == 0)
-        {
-            //Standing still
+            }
+            if (Horizontal < -0.25)
+            {
+                //Walking Left
+                animator.Play("PlayerWalk");
+
+            }
+            if (Horizontal == 0)
+            {
+                //Standing still
+                animator.Play("idle");
+            }
         }
 
 
