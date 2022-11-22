@@ -18,7 +18,6 @@ public class CameraSmoothing : MonoBehaviour
         mousePos.x = mousePos.x / dampening;
         mousePos.y = mousePos.y / dampening;
         Vector3 TestVector = new Vector3(mousePos.x, mousePos.y, 0);
-        Debug.Log(mousePos);
         Vector3 targetPosition = target.position + offset;
         transform.position = Vector3.Slerp(transform.position, targetPosition + TestVector + Shake, smoothing * Time.deltaTime);
     }

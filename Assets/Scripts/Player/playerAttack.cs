@@ -48,7 +48,6 @@ public class playerAttack : MonoBehaviour
             Collider2D[] cratesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, crateLayer);
             for(int i = 0; i < cratesToDamage.Length; i++)
             {
-                Debug.Log("attack crate");
                 cratesToDamage[i].GetComponent<CrateObject>().takeDamage(damage);
             }
 
