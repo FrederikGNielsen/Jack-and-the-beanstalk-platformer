@@ -20,6 +20,9 @@ public class PlayerMovement : MonoBehaviour
 
     public Animator animator;
 
+    //Animations
+    public bool isCursorCenter;
+    public bool isWalking;
 
     void Update()
     {
@@ -41,8 +44,16 @@ public class PlayerMovement : MonoBehaviour
             }
             if (Horizontal == 0)
             {
+
                 //Standing still
-                animator.Play("idle");
+                if(isCursorCenter == true)
+                {
+                    animator.Play("IdleFront");
+                }
+                if(isCursorCenter == false)
+                {
+                    animator.Play("IdleSide");
+                }
             }
         }
 

@@ -17,26 +17,47 @@ public class LookAtMouse : MonoBehaviour
     {
         Vector3 mousePos = Input.mousePosition;
         float screenWidth = Screen.width;
-        float RightPos = screenWidth - screenWidth / 3 * 2;
-        float Center = screenWidth - screenWidth / 3 * 2;
-        float leftPos = screenWidth + screenWidth / 3 * 2;
+        float RightPosIdle = (screenWidth / 3) * 2 - ((screenWidth / 100) * 15);
+        float LeftPosIdle = (screenWidth / 3) + ((screenWidth / 100) * 15);
 
-
-        if (mousePos.x < leftPos)
+        if (mousePos.x < screenWidth / 2)
         {
-            Debug.Log("Left");
-            GetComponent<playerAttack>().AttackDirection(true);
-            Vector3 localScale = transform.localScale;
-            localScale.x = 1.5f;
-            transform.localScale = localScale;
-        }
-        else if (mousePos.x < RightPos)
-        {
-            Debug.Log("Right");
             GetComponent<playerAttack>().AttackDirection(false);
+        }
+        if (mousePos.x > screenWidth / 2)
+        {
+            GetComponent<playerAttack>().AttackDirection(true);
+
+        }
+
+        //Idle look side or center
+        if (mousePos.x < LeftPosIdle)
+        {
             Vector3 localScale = transform.localScale;
             localScale.x = -1.5f;
             transform.localScale = localScale;
+            GetComponent<PlayerMovement>().isCursorCenter= false;
+        }
+        else if (mousePos.x > RightPosIdle)
+        {
+            Vector3 localScale = transform.localScale;
+            localScale.x = 1.5f;
+            transform.localScale = localScale;
+            GetComponent<PlayerMovement>().isCursorCenter = false;
+        }
+        else
+        {
+            Vector3 localScale = transform.localScale;
+            if (mousePos.x < screenWidth / 2)
+            {
+                localScale.x = -1.5f;
+            }
+            if (mousePos.x > screenWidth / 2)
+            {
+                localScale.x = 1.5f;
+            }
+            transform.localScale = localScale;
+            GetComponent<PlayerMovement>().isCursorCenter = true;
         }
     }
 }
