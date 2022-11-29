@@ -50,11 +50,11 @@ public class LookAtMouse : MonoBehaviour
             Vector3 localScale = transform.localScale;
             if (mousePos.x < screenWidth / 2)
             {
-                localScale.x = -1.5f;
+                localScale.x = -1.3f;
             }
             if (mousePos.x > screenWidth / 2)
             {
-                localScale.x = 1.5f;
+                localScale.x = 1.3f;
             }
             transform.localScale = localScale;
             GetComponent<PlayerMovement>().isCursorCenter = true;
