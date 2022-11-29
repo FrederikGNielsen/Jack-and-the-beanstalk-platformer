@@ -27,12 +27,10 @@ public class EnemyMovement : MonoBehaviour
             if (currentTarget == targetPoint1)
             {
                 currentTarget = targetPoint2;
-                Debug.Log("Target point 1 Reached");
             }
             else if (currentTarget == targetPoint2)
             {
                 currentTarget = targetPoint1;
-                Debug.Log("Target point 2 Reached");
             }
         }
     }

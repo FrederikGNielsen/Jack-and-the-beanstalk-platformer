@@ -16,11 +16,8 @@ public class Target : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void TargetHit()
     {
-        if(collision.transform.tag == "Target")
-        {
-            Debug.Log("Hit Target");
-        }
+        Debug.Log("Test");
     }
 }
