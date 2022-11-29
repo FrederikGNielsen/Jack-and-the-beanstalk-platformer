@@ -36,7 +36,7 @@ public class Projectile : MonoBehaviour
         }
         if(collision.transform.tag == "Target")
         {
-            collision.
+
         }
     }
 }
