@@ -17,8 +17,8 @@ public class LookAtMouse : MonoBehaviour
     {
         Vector3 mousePos = Input.mousePosition;
         float screenWidth = Screen.width;
-        float RightPosIdle = (screenWidth / 3) * 2 - ((screenWidth / 100) * 15);
-        float LeftPosIdle = (screenWidth / 3) + ((screenWidth / 100) * 15);
+        float RightPosIdle = (screenWidth / 3) * 2 - ((screenWidth / 100) * 10);
+        float LeftPosIdle = (screenWidth / 3) + ((screenWidth / 100) * 10);
 
         if (mousePos.x < screenWidth / 2)
         {
@@ -34,14 +34,14 @@ public class LookAtMouse : MonoBehaviour
         if (mousePos.x < LeftPosIdle)
         {
             Vector3 localScale = transform.localScale;
-            localScale.x = -1.5f;
+            localScale.x = -1.4f;
             transform.localScale = localScale;
             GetComponent<PlayerMovement>().isCursorCenter= false;
         }
         else if (mousePos.x > RightPosIdle)
         {
             Vector3 localScale = transform.localScale;
-            localScale.x = 1.5f;
+            localScale.x = 1.4f;
             transform.localScale = localScale;
             GetComponent<PlayerMovement>().isCursorCenter = false;
         }
@@ -50,11 +50,11 @@ public class LookAtMouse : MonoBehaviour
             Vector3 localScale = transform.localScale;
             if (mousePos.x < screenWidth / 2)
             {
-                localScale.x = -1.3f;
+                localScale.x = -1.4f;
             }
             if (mousePos.x > screenWidth / 2)
             {
-                localScale.x = 1.3f;
+                localScale.x = 1.4f;
             }
             transform.localScale = localScale;
             GetComponent<PlayerMovement>().isCursorCenter = true;
