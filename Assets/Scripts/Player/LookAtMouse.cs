@@ -9,6 +9,8 @@ public class LookAtMouse : MonoBehaviour
 {
     public TMP_Text mouseText;
     public GameObject player;
+
+    public bool PointLeft;
     void Start()
     {
     }
@@ -35,6 +37,7 @@ public class LookAtMouse : MonoBehaviour
         {
             Vector3 localScale = transform.localScale;
             localScale.x = -1.4f;
+            PointLeft = false;
             transform.localScale = localScale;
             GetComponent<PlayerMovement>().isCursorCenter= false;
         }
@@ -42,6 +45,7 @@ public class LookAtMouse : MonoBehaviour
         {
             Vector3 localScale = transform.localScale;
             localScale.x = 1.4f;
+            PointLeft = true;
             transform.localScale = localScale;
             GetComponent<PlayerMovement>().isCursorCenter = false;
         }
@@ -51,10 +55,12 @@ public class LookAtMouse : MonoBehaviour
             if (mousePos.x < screenWidth / 2)
             {
                 localScale.x = -1.4f;
+                PointLeft = false;
             }
             if (mousePos.x > screenWidth / 2)
             {
                 localScale.x = 1.4f;
+                PointLeft = true;
             }
             transform.localScale = localScale;
             GetComponent<PlayerMovement>().isCursorCenter = true;

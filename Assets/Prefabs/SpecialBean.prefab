@@ -168,4 +168,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 5054340349017935843}
-  specialBean: {fileID: 2253609693481562036, guid: 90b3566117b0d0f4dac47826d969c6cb, type: 3}
+  specialBean: {fileID: 1626579857415856925, guid: c6aa55e27eacae245b37a9d25a41f6b5, type: 3}

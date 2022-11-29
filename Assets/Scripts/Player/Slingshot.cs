@@ -100,7 +100,6 @@ public class Slingshot : MonoBehaviour
             {
                 points[i].gameObject.SetActive(false);
             }
-
         }
     }
 
