@@ -40,22 +40,22 @@ public class SpecialBean : MonoBehaviour
 
     public void SpawnSpecialBean()
     {
-        GameObject player = GameObject.Find("Player");
-        PointLeft = player.GetComponent<LookAtMouse>().PointLeft;
-        if(PointLeft == true)
-        {
-            Vector3 localScale = transform.localScale;
-            localScale.x = 1f;
-            transform.localScale = localScale;
-        }
-        if(PointLeft == false)
-        {
-            Vector3 localScale = transform.localScale;
-            localScale.x = -1f;
-            transform.localScale = localScale;
-        }
         Vector3 SpawnPosition = new Vector3(transform.position.x, transform.position.y - 0.2f, transform.position.z);
         GameObject specialBeanGO = Instantiate(specialBean, SpawnPosition, Quaternion.identity);
+        GameObject player = GameObject.Find("Player");
+        PointLeft = player.GetComponent<LookAtMouse>().PointLeft;
+        if (PointLeft == true)
+        {
+            Vector3 localScale = specialBeanGO.transform.localScale;
+            localScale.x = 1f;
+            specialBeanGO.transform.localScale = localScale;
+        }
+        if (PointLeft == false)
+        {
+            Vector3 localScale = specialBeanGO.transform.localScale;
+            localScale.x = -1f;
+            specialBeanGO.transform.localScale = localScale;
+        }
         Destroy(specialBeanGO, 6f);
     }
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 77a0e4cf9dca6344b92434f4e8a7226e
+guid: df79214616859974fb19425cb6de62da
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 15.85
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -104,442 +104,463 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dark Castle_0
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 109
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4906abc4ece09c240b4f3952499fb2cb
-      internalID: 804821086
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Castle_1
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 109
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 76c2248470640b4498fcba34a0974428
-      internalID: 271173579
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Castle_2
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 109
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0e8689e7b67b3244a99c47e0a706258f
-      internalID: -2062257301
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Castle_3
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 91
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 17fa98e6bc0e27e47bd27d9f600db5e1
-      internalID: -1511274061
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Castle_4
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 91
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb81e91d664fe714aa903b19cbd32beb
-      internalID: -730904317
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Castle_5
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 91
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e2c4462b7ed0f6145811ad6248caa3e9
-      internalID: -1385264868
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Castle_6
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 73
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a8f6c2c19e091374393bb0a5677eae55
-      internalID: -774359110
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Castle_7
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 73
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0a1a4ab613d5d1d459644a7f92cdf7ca
-      internalID: 655181313
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Castle_8
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 73
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 875694c21eea4ad40bd6a2983f19bd93
-      internalID: 1662516450
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Castle_9
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 54
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5176413973b7c4c4da0e0722ca02e73c
-      internalID: 693525451
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Castle_10
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 54
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a8a56ce735d96da45b6583c2839334b5
-      internalID: 1953771312
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Castle_11
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 35
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 644010727d2ac744bba1cb72d24e4dc0
-      internalID: 1051535499
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Castle_12
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 35
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b9336902505c2744ea45d92a208eb184
-      internalID: 505131534
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Castle_13
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 35
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8651bccdb2f997c48a8a87b260bbf512
-      internalID: -1882738203
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Castle_14
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 15
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b13770aef324520488938538d38ba9df
-      internalID: -1481589771
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Castle_15
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 15
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a195f6b086c5b86419bcdca3fd7b787b
-      internalID: -450402984
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Castle_16
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 14
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 36a3971a0d9618940a7fd4c7e478ba92
-      internalID: 1422718977
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dark Castle_17
+      name: 2c06vqun_0
       rect:
         serializedVersion: 2
         x: 2
-        y: 1
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 192
+        width: 16
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed4428e2aeaae384598e8d40b76a155a
-      internalID: 1160145390
+      spriteID: 9ef1e46063b878549ac59e2f83e41621
+      internalID: 924815726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Castle_18
+      name: EnemyIdle1
       rect:
         serializedVersion: 2
-        x: 8
-        y: 1
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 22
+        y: 192
+        width: 16
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5625, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e36e0f535cadf34698e9be9f44ebe32
-      internalID: -697101080
+      spriteID: 5536a0c097b1c6042a91d5f8dcc0649d
+      internalID: 236869103
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Castle_19
+      name: EnemyIdle2
       rect:
         serializedVersion: 2
-        x: 14
-        y: 1
-        width: 4
-        height: 4
+        x: 41
+        y: 192
+        width: 16
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 191ba827d67936e40a65a0d91da1c3e6
-      internalID: 900508353
+      spriteID: 7fa6e22ceeced814d9315f8b7478e596
+      internalID: 570110411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Castle_20
+      name: 2c06vqun_3
       rect:
         serializedVersion: 2
-        x: 20
-        y: 1
-        width: 4
-        height: 4
+        x: 67
+        y: 192
+        width: 16
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 522a0138196059d4388ecf0c964782c7
-      internalID: -105035010
+      spriteID: d94715000ba225b4c922949e4ff8294b
+      internalID: -1238645151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyWalk1_Happy
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 128
+        width: 22
+        height: 64
+      alignment: 9
+      pivot: {x: 0.40909094, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f28e5094f7c7f147b311e88dbfd37f2
+      internalID: -1617958881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyWalk2_Happy
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 128
+        width: 20
+        height: 64
+      alignment: 9
+      pivot: {x: 0.45000002, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645aae3eed9ec534e90bf2efe813fc45
+      internalID: -1091859016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyWalk3_Happy
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 128
+        width: 17
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5294118, y: 0.50793654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d4e94827543a9c4daa9e2d66c8134a4
+      internalID: -1943861019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyWalk4_Happy
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 128
+        width: 20
+        height: 63
+      alignment: 9
+      pivot: {x: 0.45000002, y: 0.50793654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f68f995125ac4ae4e959e815527529f8
+      internalID: -223020062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyWalk5_Happy
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 128
+        width: 22
+        height: 63
+      alignment: 9
+      pivot: {x: 0.40909094, y: 0.50793654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a247e7c73711e549b7949c0bb38cd15
+      internalID: -1277917205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test123
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 128
+        width: 22
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b560cca31ab01c44f887e57547421b5d
+      internalID: 591761889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test1232
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 128
+        width: 20
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ca77280583b5a4bb8dba921ca319df
+      internalID: 1262131134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test1234
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 128
+        width: 17
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2264464f71765654e8ee0531cd1dcb5c
+      internalID: -167900601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Test12345
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 128
+        width: 20
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a377ece9ca1564692523c494f223fb
+      internalID: 1637597883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 123123wasd
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 128
+        width: 22
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d6248090cff57845bf807617d24646b
+      internalID: 2080321242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyAttack1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 64
+        width: 25
+        height: 64
+      alignment: 9
+      pivot: {x: 0.44, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8b2f240035e5543b5970de849c0bde
+      internalID: -1091487059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyAttack2
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 64
+        width: 28
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4110b71d35f0743bea6ec61ce70211
+      internalID: -812119033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyAttack3
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 64
+        width: 30
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb8677d266e62d4ab3a4014866e7919
+      internalID: 1250725294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyStaggered1
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 59
+        width: 21
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f738044a08981e64a9b636a5847ed2e7
+      internalID: 1222066081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyStaggered2
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 59
+        width: 19
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 640d3a01a97cb28439963385f0c075d6
+      internalID: 909834532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyStaggered3
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 58
+        width: 18
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49e41a7a6b63cad4483d7a026d5bd8db
+      internalID: 862479200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyAttack4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 38
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42105263, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c968a133ab30504580eb9ccd4cab232
+      internalID: -920580335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyStaggered4
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 58
+        width: 18
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d62741c8b0946e48b780014114609c2
+      internalID: 839799828
       vertices: []
       indices: 
       edges: []
@@ -555,27 +576,31 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Dark Castle_18: -697101080
-      Dark Castle_9: 693525451
-      Dark Castle_17: 1160145390
-      Dark Castle_2: -2062257301
-      Dark Castle_12: 505131534
-      Dark Castle_8: 1662516450
-      Dark Castle_11: 1051535499
-      Dark Castle_10: 1953771312
-      Dark Castle_14: -1481589771
-      Dark Castle_0: 804821086
-      Dark Castle_13: -1882738203
-      Dark Castle_4: -730904317
-      Dark Castle_20: -105035010
-      Dark Castle_19: 900508353
-      Dark Castle_16: 1422718977
-      Dark Castle_6: -774359110
-      Dark Castle_7: 655181313
-      Dark Castle_3: -1511274061
-      Dark Castle_1: 271173579
-      Dark Castle_5: -1385264868
-      Dark Castle_15: -450402984
+      2c06vqun_22: 1228289429
+      2c06vqun_0: 924815726
+      EnemyAttack4: -920580335
+      EnemyStaggered2: 909834532
+      Test12345: 1637597883
+      EnemyStaggered1: 1222066081
+      Test1234: -167900601
+      EnemyStaggered4: 839799828
+      EnemyWalk3_Happy: -1943861019
+      2c06vqun_19: -206841285
+      EnemyStaggered3: 862479200
+      EnemyWalk1_Happy: -1617958881
+      EnemyWalk4_Happy: -223020062
+      123123wasd: 2080321242
+      EnemyAttack3: 1250725294
+      EnemyIdle2: 570110411
+      2c06vqun_3: -1238645151
+      EnemyWalk2_Happy: -1091859016
+      Test1232: 1262131134
+      2c06vqun_21: 613473795
+      EnemyAttack2: -812119033
+      EnemyIdle1: 236869103
+      Test123: 591761889
+      EnemyAttack1: -1091487059
+      EnemyWalk5_Happy: -1277917205
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
