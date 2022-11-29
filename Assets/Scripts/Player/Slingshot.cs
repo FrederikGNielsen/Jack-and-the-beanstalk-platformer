@@ -35,7 +35,7 @@ public class Slingshot : MonoBehaviour
         for (int i = 0; i < numberOfPoints; i++)
         {
             points[i] = Instantiate(point, projectilePoint.position, Quaternion.identity);
-
+            points[i].SetActive(false);
         }
     }
 

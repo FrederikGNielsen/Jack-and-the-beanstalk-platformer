@@ -11,7 +11,8 @@ public class CrateObject : MonoBehaviour
 
     public void Start()
     {
-        
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down);
+        transform.position = hit.point;
     }
 
     public void takeDamage(float amount)
@@ -20,9 +21,6 @@ public class CrateObject : MonoBehaviour
         if (health < 0)
         {
             destroyCrate();
-            
-
-
         }
     }
 

@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Jump")]
     public float jumpHeight;
+    public float mayJump;
     public bool isGrounded;
     public Transform groundcheck;
     public float radius;
@@ -61,21 +62,24 @@ public class PlayerMovement : MonoBehaviour
         //Checks if player is grounded
         if (Physics2D.OverlapBox(groundcheck.position, new Vector2(0.45f, 0.01f), 0, groundLayer))
         {
-            isGrounded = true;
+
+            mayJump = 0.33f;
         } else
         {
-            isGrounded = false;
+            mayJump -= Time.deltaTime;
         }
 
         //Jump
-        if(Input.GetButtonDown("Jump") && isGrounded == true)
+        if(Input.GetButtonDown("Jump") && mayJump > 0.1)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
+            mayJump = 0;
         }
 
         if(Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
         {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.75f);
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.65f);
+            mayJump = 0;
         }
 
     }

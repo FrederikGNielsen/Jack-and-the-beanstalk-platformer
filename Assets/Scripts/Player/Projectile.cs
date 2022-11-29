@@ -28,7 +28,7 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.transform.tag != "Player")
+        if(collision.transform.tag != "Player" && collision.transform.tag  != "Target")
         {
             rb.velocity = Vector3.zero;
             rb.isKinematic = true;
