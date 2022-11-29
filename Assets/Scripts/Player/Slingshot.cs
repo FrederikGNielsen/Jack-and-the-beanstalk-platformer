@@ -11,9 +11,15 @@ public class Slingshot : MonoBehaviour
 
     public GameObject Player;
     public GameObject Projectile;
+    public GameObject SpecialBean;
     public float projectileForce;
     public Transform projectilePoint;
+
+    public bool normalBullet;
+
     Vector2 direction;
+
+
 
     public float chargeTime;
     public float totalTime;
@@ -59,9 +65,17 @@ public class Slingshot : MonoBehaviour
         {
             if (Input.GetMouseButton(1))
             {
-                chargeTime += Time.deltaTime;
-                projectileForce = chargeTime * 3.5f + 2;
-                projectileForce = Mathf.Clamp(projectileForce, 2, 10);
+                if(normalBullet)
+                {
+                    chargeTime += Time.deltaTime;
+                    projectileForce = chargeTime * 3.5f + 2;
+                    projectileForce = Mathf.Clamp(projectileForce, 2, 10);
+                } else
+                {
+                    chargeTime += Time.deltaTime;
+                    projectileForce = chargeTime * 1.5f + 2;
+                    projectileForce = Mathf.Clamp(projectileForce, 2, 4);
+                }
             }
             if (Input.GetMouseButtonUp(1))
             {
@@ -92,9 +106,17 @@ public class Slingshot : MonoBehaviour
 
     public void Shoot()
     {
-        GameObject newProjectile = Instantiate(Projectile, projectilePoint.position, projectilePoint.rotation);
-        newProjectile.GetComponent<Rigidbody2D>().velocity = transform.right * projectileForce;
-        Stones--;
+        if(normalBullet == true)
+        {
+            GameObject newProjectile = Instantiate(Projectile, projectilePoint.position, projectilePoint.rotation);
+            newProjectile.GetComponent<Rigidbody2D>().velocity = transform.right * projectileForce;
+            Stones--;
+        } else
+        {
+            GameObject newProjectile = Instantiate(SpecialBean, projectilePoint.position, projectilePoint.rotation);
+            newProjectile.GetComponent<Rigidbody2D>().velocity = transform.right * projectileForce;
+            Stones--;
+        }
     }
 
     Vector2 PointPosition(float t)

@@ -34,9 +34,5 @@ public class Projectile : MonoBehaviour
             rb.isKinematic = true;
             Destroy(this.gameObject);
         }
-        if(collision.transform.tag == "Target")
-        {
-
-        }
     }
 }
