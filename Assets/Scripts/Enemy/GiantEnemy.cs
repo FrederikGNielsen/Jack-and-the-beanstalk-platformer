@@ -29,9 +29,13 @@ public class GiantEnemy : MonoBehaviour
 
     [Header("Attack wave")]
     public bool attackWave;
+    public bool attackWaveSound;
     public GameObject AttackWave;
     public GameObject WavePosition;
     public Animator animator;
+
+    public AudioSource aSource;
+    public AudioClip StompSFX;
 
     void Start()
     {
@@ -74,6 +78,12 @@ public class GiantEnemy : MonoBehaviour
                 };
             } else // if is attacking
             {
+                if(attackTimeLeft < 0.5 && !attackWaveSound)
+                {
+                    aSource.clip = StompSFX;
+                    aSource.Play();
+                    attackWaveSound = true;
+                }
                 if(attackTimeLeft < 0.3 && !attackWave)
                 {
                     Debug.Log("Ground stomp");
@@ -90,6 +100,7 @@ public class GiantEnemy : MonoBehaviour
                     //Debug.Log("No Longer staggered");
                     isAttacking = false;
                     attackWave = false;
+                    attackWaveSound= false;
                 }
             }
         }

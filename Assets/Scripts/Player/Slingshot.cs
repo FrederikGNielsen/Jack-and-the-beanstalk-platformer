@@ -13,7 +13,7 @@ public class Slingshot : MonoBehaviour
     public GameObject Projectile;
     public GameObject SpecialBean;
     public float projectileForce;
-    private Transform projectilePoint;
+    public Transform projectilePoint;
 
     public bool normalBullet;
 
@@ -31,13 +31,13 @@ public class Slingshot : MonoBehaviour
     //Trajectory
     public GameObject point;
     GameObject[] points;
-    private int numberOfPoints;
-    private float spaceBetweenPoints;
+    public int numberOfPoints;
+    public float spaceBetweenPoints;
 
 
     void Start()
     {
-        Stones = GetComponent<PlayerData>().pebbles;
+
         points = new GameObject[numberOfPoints];
         for (int i = 0; i < numberOfPoints; i++)
         {
@@ -66,12 +66,13 @@ public class Slingshot : MonoBehaviour
         {
             if (Input.GetMouseButton(1))
             {
-                if(normalBullet)
+                if (normalBullet)
                 {
                     chargeTime += Time.deltaTime;
                     projectileForce = chargeTime * 3.5f + 2;
                     projectileForce = Mathf.Clamp(projectileForce, 2, 10);
-                } else
+                }
+                else
                 {
                     chargeTime += Time.deltaTime;
                     projectileForce = chargeTime * 1.5f + 2;
@@ -106,13 +107,14 @@ public class Slingshot : MonoBehaviour
 
     public void Shoot()
     {
-        if(normalBullet == true)
+        if (normalBullet == true)
         {
             GameObject newProjectile = Instantiate(Projectile, projectilePoint.position, projectilePoint.rotation);
             newProjectile.GetComponent<Rigidbody2D>().velocity = transform.right * projectileForce;
             newProjectile.GetComponent<Projectile>().force = projectileForce;
             Stones--;
-        } else
+        }
+        else
         {
             GameObject newProjectile = Instantiate(SpecialBean, projectilePoint.position, projectilePoint.rotation);
             newProjectile.GetComponent<Rigidbody2D>().velocity = transform.right * projectileForce;
