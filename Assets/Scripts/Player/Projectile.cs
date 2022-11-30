@@ -26,13 +26,26 @@ public class Projectile : MonoBehaviour
         }
     }
 
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Giant")
+        {
+            Debug.Log("Hit Giant");
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.tag == "Giant")
+        {
+            //Debug.Log("Hit Giant");
+        }
         if(collision.transform.tag != "Player" && collision.transform.tag  != "Target")
         {
-            rb.velocity = Vector3.zero;
-            rb.isKinematic = true;
-            Destroy(this.gameObject);
+            //rb.velocity = Vector3.zero;
+            //rb.isKinematic = true;
+            //Destroy(this.gameObject);
         }
     }
 }

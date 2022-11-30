@@ -30,20 +30,18 @@ public class SpecialBean : MonoBehaviour
         if(rb.velocity.magnitude < 0.05f)
         {
             rb.Sleep();
-            Debug.Log("sleep");
-            SpawnSpecialBean();
+            SpawnSpecialBean(GameObject.FindWithTag("Player").GetComponent<LookAtMouse>().PointLeft);
             Destroy(this.gameObject);
         }
     }
 
 
 
-    public void SpawnSpecialBean()
+    public void SpawnSpecialBean(bool isPointingLeft)
     {
+        PointLeft = isPointingLeft;
         Vector3 SpawnPosition = new Vector3(transform.position.x, transform.position.y - 0.2f, transform.position.z);
         GameObject specialBeanGO = Instantiate(specialBean, SpawnPosition, Quaternion.identity);
-        GameObject player = GameObject.Find("Player");
-        PointLeft = player.GetComponent<LookAtMouse>().PointLeft;
         if (PointLeft == true)
         {
             Vector3 localScale = specialBeanGO.transform.localScale;
