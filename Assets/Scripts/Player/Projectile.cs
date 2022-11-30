@@ -10,6 +10,8 @@ public class Projectile : MonoBehaviour
     private bool sleeping;
     private float fallTime;
 
+    public float force;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -31,7 +33,11 @@ public class Projectile : MonoBehaviour
     {
         if (collision.gameObject.tag == "Giant")
         {
-            Debug.Log("Hit Giant");
+            Debug.Log("Hit Giant with " + force);
+            if(force > 7)
+            {
+                collision.GetComponent<GiantEnemy>().StaggerGiant();
+            }
         }
     }
 

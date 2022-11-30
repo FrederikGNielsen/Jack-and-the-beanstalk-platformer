@@ -56,7 +56,18 @@ public class playerAttack : MonoBehaviour
             Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, enemiesLayer);
             for (int i = 0; i < enemiesToDamage.Length; i++)
             {
-                
+                if(enemiesToDamage[i].gameObject.tag == "Giant")
+                {
+                    if (enemiesToDamage[i].GetComponent<GiantEnemy>().staggered) // if giant is staggered attack
+                    {
+                        enemiesToDamage[i].GetComponent<GiantEnemy>().attackedWhileStaggered();
+                        Debug.Log("Hit Giant while it was staggered");
+                    } else
+                    {
+                        enemiesToDamage[i].GetComponent<GiantEnemy>().attackeWhileNotStaggered();
+                        Debug.Log("Hit Giant while it wasn't staggered");
+                    }
+                }
             }
         } 
     }

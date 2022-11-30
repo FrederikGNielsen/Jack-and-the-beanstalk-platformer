@@ -13,7 +13,7 @@ public class Slingshot : MonoBehaviour
     public GameObject Projectile;
     public GameObject SpecialBean;
     public float projectileForce;
-    public Transform projectilePoint;
+    private Transform projectilePoint;
 
     public bool normalBullet;
 
@@ -21,8 +21,8 @@ public class Slingshot : MonoBehaviour
 
 
 
-    public float chargeTime;
-    public float totalTime;
+    private float chargeTime;
+    private float totalTime;
 
     //UI
     public TMPro.TMP_Text stoneText;
@@ -31,12 +31,13 @@ public class Slingshot : MonoBehaviour
     //Trajectory
     public GameObject point;
     GameObject[] points;
-    public int numberOfPoints;
-    public float spaceBetweenPoints;
+    private int numberOfPoints;
+    private float spaceBetweenPoints;
 
 
     void Start()
     {
+        Stones = GetComponent<PlayerData>().pebbles;
         points = new GameObject[numberOfPoints];
         for (int i = 0; i < numberOfPoints; i++)
         {
@@ -109,6 +110,7 @@ public class Slingshot : MonoBehaviour
         {
             GameObject newProjectile = Instantiate(Projectile, projectilePoint.position, projectilePoint.rotation);
             newProjectile.GetComponent<Rigidbody2D>().velocity = transform.right * projectileForce;
+            newProjectile.GetComponent<Projectile>().force = projectileForce;
             Stones--;
         } else
         {
@@ -117,6 +119,8 @@ public class Slingshot : MonoBehaviour
             Stones--;
         }
     }
+
+
 
     Vector2 PointPosition(float t)
     {

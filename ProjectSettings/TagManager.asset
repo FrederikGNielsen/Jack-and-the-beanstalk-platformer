@@ -9,6 +9,7 @@ TagManager:
   - Projectile
   - Ground
   - Giant
+  - GiantHead
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Enemy
   - Projectile
   - Target
-  - 
+  - Giant
   - 
   - 
   - 
