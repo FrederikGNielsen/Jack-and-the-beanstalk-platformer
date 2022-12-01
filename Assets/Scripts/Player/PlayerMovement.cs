@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Walk")]
     public float Horizontal;
     private bool facingRight = true;
-    public float Speed;
+    float Speed;
 
     [Header("Jump")]
     public float jumpHeight;
@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundcheck;
     public float radius;
     public LayerMask groundLayer;
+
+    public float acceleration;
 
     public Rigidbody2D rb;
 
@@ -31,23 +33,21 @@ public class PlayerMovement : MonoBehaviour
         Horizontal = Input.GetAxisRaw("Horizontal");
         if(this.GetComponent<playerAttack>().isAttacking == false)
         {
-            if (Horizontal > 0.25)
+            if (Horizontal > 0.25) //If walking right do this
             {
-                //Walking right
                 animator.Play("PlayerWalk");
 
             }
-            if (Horizontal < -0.25)
+            if (Horizontal < -0.25) //if walking left do this
             {
-                //Walking Left
                 animator.Play("PlayerWalk");
 
             }
+            //If standing still
             if (Horizontal == 0)
             {
-
                 //Standing still
-                if(isCursorCenter == true)
+                if (isCursorCenter == true)
                 {
                     animator.Play("IdleFront");
                 }
@@ -63,14 +63,14 @@ public class PlayerMovement : MonoBehaviour
         if (Physics2D.OverlapBox(groundcheck.position, new Vector2(0.45f, 0.01f), 0, groundLayer))
         {
 
-            mayJump = 0.33f;
+            mayJump = 0.33f; // coyote time
         } else
         {
             mayJump -= Time.deltaTime;
         }
 
         //Jump
-        if(Input.GetButtonDown("Jump") && mayJump > 0.1)
+        if(Input.GetButtonDown("Jump") && mayJump > 0.1) //if player hit the jump button with coyote time
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
             mayJump = 0;
@@ -86,7 +86,13 @@ public class PlayerMovement : MonoBehaviour
 
     public void FixedUpdate()
     {
-        rb.velocity = new Vector2(Horizontal * Speed, rb.velocity.y);
+        if(acceleration < 0)
+        {
+            rb.velocity = new Vector2(-Horizontal * Speed, rb.velocity.y);
+        } else
+        {
+            rb.velocity = new Vector2(Horizontal * Speed, rb.velocity.y);
+        }
     }
 
     private void faceFlip()

@@ -9,7 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e18343d662270643aa30abb59d24120, type: 3}
-  m_Name: Test
+  m_Script: {fileID: 11500000, guid: 38d2f211d795589438f6b5affaebe47e, type: 3}
+  m_Name: PlayerData
   m_EditorClassIdentifier: 
-  dropGameObject: {fileID: 0}
+  health: 25
+  pebbles: 10
+  SpecialPebbles1: 0
+  SpecialPebbles2: 0
+  SpecialPebbles3: 0

@@ -2,27 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerData
+[CreateAssetMenu(fileName = "PlayerData", menuName = "ScriptableObjects/PlayerData", order = 1)]
+public class PlayerData : ScriptableObject
 {
-
-    public int level;
-    public float health;
-    public int pebbles;
-    public int SpecialPebbles1;
-    public int SpecialPebbles2;
-    public int SpecialPebbles3;
-    public float knifeDamage;
-
-
-
-    public PlayerData(Player player)
-    {
-        level = player.level;
-        health = player.health;
-        pebbles = player.pebbles;
-        SpecialPebbles1= player.SpecialPebbles1;
-        SpecialPebbles2= player.SpecialPebbles2;
-        SpecialPebbles3= player.SpecialPebbles3;
-        knifeDamage= player.knifeDamage;
-    }
+    public float health = 25;
+    public int pebbles = 10;
+    public int SpecialPebbles1 = 0;
+    public int SpecialPebbles2 = 0;
+    public int SpecialPebbles3 = 0;
 }

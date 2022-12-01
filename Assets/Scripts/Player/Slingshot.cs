@@ -17,6 +17,8 @@ public class Slingshot : MonoBehaviour
 
     public bool normalBullet;
 
+    public Player player;
+
     Vector2 direction;
 
 
@@ -37,7 +39,7 @@ public class Slingshot : MonoBehaviour
 
     void Start()
     {
-
+        Stones = player.GetComponent<Player>().pebbles;
         points = new GameObject[numberOfPoints];
         for (int i = 0; i < numberOfPoints; i++)
         {

@@ -238,7 +238,7 @@ TextureImporter:
         width: 17
         height: 63
       alignment: 9
-      pivot: {x: 0.4117647, y: 0.53968257}
+      pivot: {x: 0.5294118, y: 0.53968257}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -574,7 +574,7 @@ TextureImporter:
         width: 16
         height: 63
       alignment: 9
-      pivot: {x: 0.4375, y: 0.53968257}
+      pivot: {x: 0.5625, y: 0.53968257}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -582,6 +582,27 @@ TextureImporter:
       bones: []
       spriteID: 107255c0725b397498ea08e92b77a0a5
       internalID: 1405639453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2c06vqun_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 27
+        width: 45
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0813a281795df64d865f8b0b6b7ae80
+      internalID: 740213621
       vertices: []
       indices: 
       edges: []
@@ -614,13 +635,14 @@ TextureImporter:
       123123wasd: 2080321242
       EnemyAttack3: 1250725294
       EnemyIdle2: 570110411
+      Test123: 591761889
       2c06vqun_3: -1238645151
       EnemyWalk2_Happy: -1091859016
-      Test1232: 1262131134
       2c06vqun_21: 613473795
+      Test1232: 1262131134
+      2c06vqun_1: 740213621
       EnemyAttack2: -812119033
       EnemyIdle1: 236869103
-      Test123: 591761889
       EnemyAttack1: -1091487059
       EnemyWalk5_Happy: -1277917205
   spritePackingTag: 

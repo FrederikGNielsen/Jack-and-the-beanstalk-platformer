@@ -4,21 +4,16 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public int level;
     public float health;
     public int pebbles;
-    public int SpecialPebbles1;
-    public int SpecialPebbles2;
-    public int SpecialPebbles3;
-    public float knifeDamage;
-
-    public void SavePlayer()
+    void Start()
     {
-        SaveSystem.SavePlayer(this);
+        
     }
 
-    public void LoadPlayer ()
+    // Update is called once per frame
+    void Update()
     {
-        SaveSystem.LoadPlayer();
+        
     }
 }
