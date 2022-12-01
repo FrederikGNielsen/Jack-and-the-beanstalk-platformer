@@ -39,7 +39,7 @@ public class LookAtMouse : MonoBehaviour
             localScale.x = -1.4f;
             PointLeft = false;
             transform.localScale = localScale;
-            GetComponent<PlayerMovement>().isCursorCenter= false;
+            GetComponent<OldPlayerMovement>().isCursorCenter= false;
         }
         else if (mousePos.x > RightPosIdle)
         {
@@ -47,7 +47,7 @@ public class LookAtMouse : MonoBehaviour
             localScale.x = 1.4f;
             PointLeft = true;
             transform.localScale = localScale;
-            GetComponent<PlayerMovement>().isCursorCenter = false;
+            GetComponent<OldPlayerMovement>().isCursorCenter = false;
         }
         else
         {
@@ -63,7 +63,7 @@ public class LookAtMouse : MonoBehaviour
                 PointLeft = true;
             }
             transform.localScale = localScale;
-            GetComponent<PlayerMovement>().isCursorCenter = true;
+            GetComponent<OldPlayerMovement>().isCursorCenter = true;
         }
     }
 }

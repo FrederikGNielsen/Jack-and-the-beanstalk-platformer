@@ -19,29 +19,29 @@ public class GameManager : MonoBehaviour
     public GameObject playerGO;
     void Start()
     {
-        health = data.health;
-        pebbles = data.pebbles;
+        //health = data.health;
+        //pebbles = data.pebbles;
         playerGO = GameObject.FindWithTag("Player");
-        playerGO.GetComponent<Player>().pebbles = data.pebbles;
-        playerGO.GetComponent<Player>().health = data.health;
+        //playerGO.GetComponent<Player>().pebbles = data.pebbles;
+        //playerGO.GetComponent<Player>().health = data.health;
     }
 
     public void saveData()
     {
-        data.pebbles = playerGO.GetComponent<Player>().pebbles;
-        data.health = playerGO.GetComponent<Player>().health;
+        //data.pebbles = playerGO.GetComponent<Player>().pebbles;
+        //data.health = playerGO.GetComponent<Player>().health;
     }
 
     public void loadData()
     {
-        playerGO.GetComponent<Player>().pebbles = data.pebbles;
-        playerGO.GetComponent<Player>().health = data.health;
+        //playerGO.GetComponent<Player>().pebbles = data.pebbles;
+        //playerGO.GetComponent<Player>().health = data.health;
     }
 
     public void Reset()
     {
-        health = data.health;
-        pebbles = data.pebbles;
+        //health = data.health;
+        //pebbles = data.pebbles;
         loadData();
     }
 

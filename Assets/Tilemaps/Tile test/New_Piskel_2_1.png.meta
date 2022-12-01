@@ -69,7 +69,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -473,7 +473,7 @@ TextureImporter:
     nameFileIdTable:
       New_Piskel_2_1_8: -768861958
       New_Piskel_2_1_17: -1124841491
-      New_Piskel_2_1_15: -46105436
+      New_Piskel_2_1_0: -2079186848
       New_Piskel_2_1_3: -820154454
       New_Piskel_2_1_11: 991699089
       New_Piskel_2_1_9: 14431442
@@ -490,7 +490,7 @@ TextureImporter:
       New_Piskel_2_1_18: 706655963
       New_Piskel_2_1_19: 410449919
       New_Piskel_2_1_1: 1880920271
-      New_Piskel_2_1_0: -2079186848
+      New_Piskel_2_1_15: -46105436
       New_Piskel_2_1_10: 308507911
   spritePackingTag: 
   pSDRemoveMatte: 0

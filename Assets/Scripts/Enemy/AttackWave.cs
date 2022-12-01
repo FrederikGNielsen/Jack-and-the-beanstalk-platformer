@@ -16,18 +16,32 @@ public class AttackWave : MonoBehaviour
 
     private int wavesDestroyed;
     public GameObject parent;
+    public LayerMask playerLayer;
+
+    public float damageCooldown;
+    public float damageCooldownLeft;
+    public GameObject damageDetection;
 
     public GameObject otherWave;
+
+    public GameObject GM;
 
     public float detectRange;
     void Start()
     {
-        
+        GM = GameObject.Find("GM");
     }
 
     // Update is called once per frame
     void Update()
     {
+        //cooldown timer
+        if(damageCooldownLeft > 0)
+        {
+            damageCooldownLeft -= Time.deltaTime;
+        }
+
+
         if(Left == false)
         {
             transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
@@ -35,9 +49,9 @@ public class AttackWave : MonoBehaviour
         {
             transform.position += new Vector3(-speed * Time.deltaTime, 0, 0);
         }
+
         if(Physics2D.OverlapCircle(collisionUp.transform.position, detectRange, groundLayer))
         {
-            Debug.Log("Hit something");
             particleSystem.Stop();
             if (wavesDestroyed == 0)
             {
@@ -52,7 +66,6 @@ public class AttackWave : MonoBehaviour
         }
         if (Physics2D.OverlapCircle(collisionDown.transform.position, detectRange, groundLayer))
         {
-            Debug.Log("no Longer touching ground");
             particleSystem.Stop();
             if(wavesDestroyed== 0)
             {
@@ -62,6 +75,19 @@ public class AttackWave : MonoBehaviour
                 Destroy(parent, 0.25f);
             }
             Destroy(this.gameObject, .25f);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Player")
+        {
+            if(damageCooldownLeft <= 0)
+            {
+                Debug.Log("Hit player");
+                GM.GetComponent<PData>().removeHealth(5);
+                damageCooldownLeft = damageCooldown;
+            }
         }
     }
 }

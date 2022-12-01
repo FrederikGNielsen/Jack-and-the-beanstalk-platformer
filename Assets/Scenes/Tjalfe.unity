@@ -231,6 +231,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 324537404297747565, guid: f94b6aab2d5a0b243b0fdd53400653ad, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 35.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 324537404297747565, guid: f94b6aab2d5a0b243b0fdd53400653ad, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 13.54
+      objectReference: {fileID: 0}
     - target: {fileID: 329846476840572338, guid: f94b6aab2d5a0b243b0fdd53400653ad, type: 3}
       propertyPath: m_Name
       value: Player
@@ -299,6 +307,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.3
       objectReference: {fileID: 0}
+    - target: {fileID: 1852266928158377181, guid: f94b6aab2d5a0b243b0fdd53400653ad, type: 3}
+      propertyPath: stoneText
+      value: 
+      objectReference: {fileID: 1928476613}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f94b6aab2d5a0b243b0fdd53400653ad, type: 3}
 --- !u!1 &1517834986
@@ -20931,7 +20943,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0.004731834, y: 0.004731834, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0

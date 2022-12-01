@@ -40,6 +40,7 @@ public class GiantEnemy : MonoBehaviour
     [Header("Player Detection")]
     public GameObject playerDetection;
     public float playerDetectionRadius;
+    public LayerMask playerlayer;
 
     [Header("Collision Detection")]
     public GameObject CollisionDetectionWall;
@@ -47,13 +48,14 @@ public class GiantEnemy : MonoBehaviour
     public float CollisionDetectionnRadius;
     public LayerMask groundLayer;
 
+    public GameObject GM;
 
     public AudioSource aSource;
     public AudioClip StompSFX;
 
     void Start()
     {
-        
+        GM = GameObject.Find("GM");
     }
 
     // Update is called once per frame
@@ -75,6 +77,13 @@ public class GiantEnemy : MonoBehaviour
 
         if(walking)
         {
+            if (Physics2D.OverlapCircle(playerDetection.transform.position, playerDetectionRadius, playerlayer, Mathf.Infinity, Mathf.Infinity))
+            {
+                Attack();
+                Debug.Log("Detected Player");
+            }
+
+
             if (turnedLeft == false)
             {
                 transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
@@ -85,7 +94,6 @@ public class GiantEnemy : MonoBehaviour
             }
             if (Physics2D.OverlapCircle(CollisionDetectionWall.transform.position, CollisionDetectionnRadius, groundLayer))
             {
-                Debug.Log("Touched wall turn around");
                 if(turnedLeft)
                 {
                     turnedLeft= false;
@@ -96,7 +104,6 @@ public class GiantEnemy : MonoBehaviour
             }
             if (Physics2D.OverlapCircle(CollisionDetectionFloor.transform.position, CollisionDetectionnRadius, groundLayer))
             {
-                Debug.Log("Close to edge");
                 if (turnedLeft)
                 {
                     turnedLeft = false;
@@ -153,7 +160,7 @@ public class GiantEnemy : MonoBehaviour
                 if(attackTimeLeft < 0.3 && !attackWave)
                 {
                     Debug.Log("Ground stomp");
-                    Instantiate(AttackWave, WavePosition.transform);
+                    Instantiate(AttackWave, WavePosition.transform.position, Quaternion.identity);
                     attackWave = true;
                 }
                 if (attackTimeLeft > 0)
@@ -167,6 +174,7 @@ public class GiantEnemy : MonoBehaviour
                     isAttacking = false;
                     attackWave = false;
                     attackWaveSound= false;
+                    aSource.Stop();
                 }
             }
         }
@@ -182,7 +190,8 @@ public class GiantEnemy : MonoBehaviour
             {
                 //Debug.Log("No Longer staggered");
                 staggered = false;
-                walking= true;
+                Angry();
+                walking = true;
             }
         }
         if(!happy)
@@ -196,7 +205,7 @@ public class GiantEnemy : MonoBehaviour
                     int randomNumber = Random.Range(0, 1000);
                     if (randomNumber == 1)
                     {
-                        isAttacking = true;
+                        Attack();
                     }
                 }
             }
@@ -224,8 +233,11 @@ public class GiantEnemy : MonoBehaviour
 
     public void Angry()
     {
-        happy = false;
-        angryTimeLeft = angryTime;
+        if(happy)
+        {
+            happy = false;
+            angryTimeLeft = angryTime;
+        }
     }
 
     public void attackedWhileStaggered()
@@ -235,6 +247,10 @@ public class GiantEnemy : MonoBehaviour
 
     public void attackeWhileNotStaggered()
     {
-        Attack();
+        if(!isAttacking)
+        {
+            Attack();
+
+        }
     }
 }
