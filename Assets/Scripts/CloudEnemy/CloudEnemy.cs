@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class CloudEnemy : MonoBehaviour
 {
-    public float damage;
+
+    Transform bar;
+
     void Start()
     {
-        
+        bar = GameObject.Find("Player").transform;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        transform.position = new Vector3(bar.position.x, transform.position.y, transform.position.z);
     }
 }
