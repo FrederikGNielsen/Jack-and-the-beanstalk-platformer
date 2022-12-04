@@ -17,7 +17,12 @@ public class playerAttack : MonoBehaviour
     public LayerMask crateLayer;
     public float attackRange;
     public int damage;
+
+    private GameObject AM;
+
     public bool isAttacking;
+    public bool isCharging;
+    public bool carryingGoose;
 
     private bool isTurnedRight;
 
@@ -28,6 +33,7 @@ public class playerAttack : MonoBehaviour
 
     void Start()
     {
+        AM = GameObject.Find("AnimationManager");
         Knife.SetActive(true);
         animator.SetFloat("Right", 1);
         Knife.SetActive(false);
@@ -36,36 +42,41 @@ public class playerAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        isCharging = GameObject.Find("Slingshot").GetComponent<Slingshot>().isCharging;
         Knife.transform.position = transform.position;
         if(Input.GetButtonDown("Fire1"))
         {
-            Knife.SetActive(true);
-            playerAnimator.Play("PlayerAttack");
-            isAttacking = true;
-            StartCoroutine(Sword());
-
-            //Checks if hitting crate and damages if hit
-            Collider2D[] cratesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, crateLayer);
-            for(int i = 0; i < cratesToDamage.Length; i++)
+            if(!isCharging)
             {
-                cratesToDamage[i].GetComponent<CrateObject>().takeDamage(damage);
-            }
+                AM.GetComponent<AnimationManager>().isAttacking = true;
+                Knife.SetActive(true);
+                isAttacking = true;
+                StartCoroutine(Sword());
 
-
-            //Checks if hitting enemy and damages if hit
-            Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, enemiesLayer);
-            for (int i = 0; i < enemiesToDamage.Length; i++)
-            {
-                if(enemiesToDamage[i].gameObject.tag == "Giant")
+                //Checks if hitting crate and damages if hit
+                Collider2D[] cratesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, crateLayer);
+                for (int i = 0; i < cratesToDamage.Length; i++)
                 {
-                    if (enemiesToDamage[i].GetComponent<GiantEnemy>().staggered) // if giant is staggered attack
+                    cratesToDamage[i].GetComponent<CrateObject>().takeDamage(damage);
+                }
+
+
+                //Checks if hitting enemy and damages if hit
+                Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, enemiesLayer);
+                for (int i = 0; i < enemiesToDamage.Length; i++)
+                {
+                    if (enemiesToDamage[i].gameObject.tag == "Giant")
                     {
-                        enemiesToDamage[i].GetComponent<GiantEnemy>().attackedWhileStaggered();
-                        Debug.Log("Hit Giant while it was staggered");
-                    } else
-                    {
-                        enemiesToDamage[i].GetComponent<GiantEnemy>().attackeWhileNotStaggered();
-                        Debug.Log("Hit Giant while it wasn't staggered");
+                        if (enemiesToDamage[i].GetComponent<GiantEnemy>().staggered) // if giant is staggered attack
+                        {
+                            enemiesToDamage[i].GetComponent<GiantEnemy>().attackedWhileStaggered();
+                            Debug.Log("Hit Giant while it was staggered");
+                        }
+                        else
+                        {
+                            enemiesToDamage[i].GetComponent<GiantEnemy>().attackeWhileNotStaggered();
+                            Debug.Log("Hit Giant while it wasn't staggered");
+                        }
                     }
                 }
             }
@@ -83,18 +94,6 @@ public class playerAttack : MonoBehaviour
         yield return new WaitForSeconds(0.15f);
         Knife.SetActive(false);
         isAttacking = false;
-    }
-
-    public void AttackDirection(bool right)
-    {
-        isTurnedRight = right;
-        if (right == true)
-        {
-            animator.SetFloat("Right", 0);
-        } else
-        {
-            animator.SetFloat("Right", 1);
-
-        }
+        AM.GetComponent<AnimationManager>().isAttacking = false;
     }
 }

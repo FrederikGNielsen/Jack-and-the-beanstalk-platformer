@@ -10,9 +10,12 @@ public class LookAtMouse : MonoBehaviour
     public TMP_Text mouseText;
     public GameObject player;
 
+    public GameObject AM;
+
     public bool PointLeft;
     void Start()
     {
+        AM = GameObject.Find("AnimationManager");
     }
 
     void Update()
@@ -22,15 +25,7 @@ public class LookAtMouse : MonoBehaviour
         float RightPosIdle = (screenWidth / 3) * 2 - ((screenWidth / 100) * 10);
         float LeftPosIdle = (screenWidth / 3) + ((screenWidth / 100) * 10);
 
-        if (mousePos.x < screenWidth / 2)
-        {
-            GetComponent<playerAttack>().AttackDirection(false);
-        }
-        if (mousePos.x > screenWidth / 2)
-        {
-            GetComponent<playerAttack>().AttackDirection(true);
-
-        }
+        
 
         //Idle look side or center
         if (mousePos.x < LeftPosIdle)
@@ -39,7 +34,7 @@ public class LookAtMouse : MonoBehaviour
             localScale.x = -1.4f;
             PointLeft = false;
             transform.localScale = localScale;
-            GetComponent<OldPlayerMovement>().isCursorCenter= false;
+            AM.GetComponent<AnimationManager>().isCursorCenter = false;
         }
         else if (mousePos.x > RightPosIdle)
         {
@@ -47,7 +42,7 @@ public class LookAtMouse : MonoBehaviour
             localScale.x = 1.4f;
             PointLeft = true;
             transform.localScale = localScale;
-            GetComponent<OldPlayerMovement>().isCursorCenter = false;
+            AM.GetComponent<AnimationManager>().isCursorCenter = false;
         }
         else
         {
@@ -63,7 +58,7 @@ public class LookAtMouse : MonoBehaviour
                 PointLeft = true;
             }
             transform.localScale = localScale;
-            GetComponent<OldPlayerMovement>().isCursorCenter = true;
+            AM.GetComponent<AnimationManager>().isCursorCenter = true;
         }
     }
 }

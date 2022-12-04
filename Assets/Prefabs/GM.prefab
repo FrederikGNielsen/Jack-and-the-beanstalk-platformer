@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5759176534669604822}
-  - component: {fileID: 5759176534669604823}
   m_Layer: 0
   m_Name: GM
   m_TagString: Untagged
@@ -32,18 +31,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5759176534669604823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5759176534669604820}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6e7cf5cf5b257c489019f6c0f31c3a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 0
-  pebbles: 0
-  Data: {fileID: 11400000, guid: fdf3c15381e58b24ab837a4c1df120cf, type: 2}

@@ -17,17 +17,22 @@ public class Slingshot : MonoBehaviour
 
     public bool normalBullet;
 
-    public Player player;
-
     Vector2 direction;
 
 
+    public bool isAttacking;
+    public bool isCharging;
+    public bool isWalking;
+    public bool carryingGoose;
+    public Animator animator;
 
     private float chargeTime;
     private float totalTime;
 
+    private GameObject AM;
+    
+
     //UI
-    public TMPro.TMP_Text stoneText;
 
 
     //Trajectory
@@ -39,7 +44,7 @@ public class Slingshot : MonoBehaviour
 
     void Start()
     {
-        Stones = player.GetComponent<Player>().pebbles;
+        AM = GameObject.Find("AnimationManager");
         points = new GameObject[numberOfPoints];
         for (int i = 0; i < numberOfPoints; i++)
         {
@@ -51,8 +56,10 @@ public class Slingshot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        isAttacking = GameObject.FindGameObjectWithTag("Player").GetComponent<playerAttack>().isAttacking;
+
         //UI
-        stoneText.text = "Stones: " + Stones;
+        //stoneText.text = "Stones: " + Stones;
 
 
         transform.position = Player.transform.position;
@@ -66,26 +73,33 @@ public class Slingshot : MonoBehaviour
         //Slingshot charge
         if (Stones > 0)
         {
-            if (Input.GetMouseButton(1))
+            if(!isAttacking)
             {
-                if (normalBullet)
+                if (Input.GetMouseButton(1))
                 {
-                    chargeTime += Time.deltaTime;
-                    projectileForce = chargeTime * 3.5f + 2;
-                    projectileForce = Mathf.Clamp(projectileForce, 2, 10);
+                    isCharging = true;
+                    AM.GetComponent<AnimationManager>().isCharging = true;
+                    if (normalBullet)
+                    {
+                        chargeTime += Time.deltaTime;
+                        projectileForce = chargeTime * 3.5f + 2;
+                        projectileForce = Mathf.Clamp(projectileForce, 2, 10);
+                    }
+                    else
+                    {
+                        chargeTime += Time.deltaTime;
+                        projectileForce = chargeTime * 1.5f + 2;
+                        projectileForce = Mathf.Clamp(projectileForce, 2, 4);
+                    }
                 }
-                else
+                if (Input.GetMouseButtonUp(1))
                 {
-                    chargeTime += Time.deltaTime;
-                    projectileForce = chargeTime * 1.5f + 2;
-                    projectileForce = Mathf.Clamp(projectileForce, 2, 4);
+                    isCharging = false;
+                    AM.GetComponent<AnimationManager>().isCharging = false;
+                    Shoot();
+                    chargeTime = 0.0f;
+                    projectileForce = chargeTime;
                 }
-            }
-            if (Input.GetMouseButtonUp(1))
-            {
-                Shoot();
-                chargeTime = 0.0f;
-                projectileForce = chargeTime;
             }
         }
 

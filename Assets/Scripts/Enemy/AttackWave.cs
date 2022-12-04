@@ -85,7 +85,7 @@ public class AttackWave : MonoBehaviour
             if(damageCooldownLeft <= 0)
             {
                 Debug.Log("Hit player");
-                GM.GetComponent<PData>().removeHealth(5);
+                //GM.GetComponent<PData>().removeHealth(5);
                 damageCooldownLeft = damageCooldown;
             }
         }

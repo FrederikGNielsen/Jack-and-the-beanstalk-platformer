@@ -1,0 +1,2025 @@
+fileFormatVersion: 2
+guid: e743b587ca463da42b79ff5efc760a38
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FrontIdle1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 352
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96cb064bc4fd73747b253de56c3d4305
+      internalID: -830677876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrontIdle2
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 352
+        width: 16
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.516129}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c52d9f6b083ab7e44a9d98857d88b99f
+      internalID: -597125777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knife
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 360
+        width: 15
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c247e2dbb868494d9de022d97b3943e
+      internalID: -1761226813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_3
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 360
+        width: 13
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d96e876450f5f43b774f07e7807393
+      internalID: 1584912741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_4
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 360
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8119d576dbd16274dbf939e56cd69dec
+      internalID: 1425965322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asdwd
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 351
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41c2f55ea9028de49af1a54e559201b5
+      internalID: -2142103754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\xE5"
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 351
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20256bc4e5ddb934fb94c5cf8eff53be
+      internalID: 1432106279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlingshotStill1
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 351
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 488c6305e76dff844817b0fa1d2a4de6
+      internalID: -1684443169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlingshotStill2
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 351
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc16d36ac459c94f802564e7fc51d77
+      internalID: 34815702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_9
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 351
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6774368676765854bbdb1ff9447f0dd0
+      internalID: -569585502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_10
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 351
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38315dbecfa2c30488cd8aa171aa0951
+      internalID: 398169276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_11
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 351
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97600a7e459ab404e8b6001ad1bb222c
+      internalID: -526742006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_12
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 351
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a67cd54cbffdaa447b9851f84a1e7a54
+      internalID: 1821739758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NGWalk_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 316
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e411e3fe2bc3509438826310dee1b480
+      internalID: 2061304806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NGWalk_2
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 316
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5425d459b0c3bd4fbdd048d0e81ac32
+      internalID: -75766701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NGWalk_3
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 316
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1346d577a19c4c14a9b733fde52ae40d
+      internalID: 1769230067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NGWalk_4
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 316
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6852ac42b964d7342bd90044a463c9b0
+      internalID: -29609011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NGWalk_5
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 316
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82fb5a075f4a7b4f86353fdb857bf5c
+      internalID: -586268085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NGWalk_6
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 316
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a83ba649cf568c4aba73ced7b89e0bf
+      internalID: 275881594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NGWalk_7
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 316
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd3d9d59df9685d4fafdd30cc2f204d4
+      internalID: -939425795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlingshotWalk1
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 318
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 224361da3c7d141418174b8e9d630ed9
+      internalID: -1909208051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlingshotWalk2
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 318
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd5527a06c6a13439e57de6ad26a46b
+      internalID: -2124377997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlingshotWalk3
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 318
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a59073bd21029864f86effb0e3dbaf4c
+      internalID: -2106480003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlingshotWalk4
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 318
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1522566a646fddd4fa4e2f6805b3a620
+      internalID: 1702135072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlingshotWalk5
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 318
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f245d9db7d5ff40b75c987773b5754
+      internalID: -1107489183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlingshotWalk6
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 318
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79e008b7b91a6b4084489029368e79a
+      internalID: -1984450265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlingshotWalk7
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 318
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb52cf90321ba641a0816ebd3dbe8d6
+      internalID: -836902397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_27
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 316
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a45d25f47e73fa4792e907db1803399
+      internalID: 1472512469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_28
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 316
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e2d9f1123b44647a03da4d03b42dcf
+      internalID: -2011985700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_29
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 316
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 220ea12f8bc83124f8b7fe777da88409
+      internalID: -328159802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_30
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 316
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff9cbae5c605a949b5aeedfa4aa25b1
+      internalID: 1165575032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SideIdle1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 281
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a71ef4b47be4a242857685b31e5be0f
+      internalID: 1904682696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SideIdle2
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 281
+        width: 16
+        height: 30
+      alignment: 9
+      pivot: {x: 0.5, y: 0.53333336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b45ace01eafa4449a3e42dd69a6533
+      internalID: 1072033401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_33
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 281
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d91bfd5794b5eb4681ef4e45cea830f
+      internalID: -933188345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_34
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 281
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d499fc5d0ca2fc040afdd99c4f7a3b39
+      internalID: 285175877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_35
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 283
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17b7d91ef0198564abfe238c0e809298
+      internalID: 107423120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_36
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 283
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4411c1c35065ac947a098f6a9b6020c8
+      internalID: 378935147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_37
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 283
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f78a50bc14b9d72489b8a50558635019
+      internalID: -1474072337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_38
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 283
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2de416166b7fd4b9f0347988b14288
+      internalID: 236229168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_39
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 283
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25f7fba2e64e6343bb78f81b5dd6759
+      internalID: 1468130672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_40
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 283
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61695e356354c24ab5113b84ee9cb2c
+      internalID: -1230256708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_41
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 283
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5656bbdd399e6464da7f49ecb2941fa4
+      internalID: 378970960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_42
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 219
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c3472dd0fceba246b977cb7095700b7
+      internalID: 1072937748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_43
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 219
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6f950474e4e4d438cd3f9b8152c4ec
+      internalID: -1017088897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_44
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 241
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e066c1e29dabe46b245539435eb30f
+      internalID: 1841652496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GWalk1
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 222
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a343a8776a6b94588f4ad605a14501
+      internalID: -1395293215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GWalk2
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 222
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc280dc681927734590f97756a1dc25e
+      internalID: 672942180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GWalk3
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 222
+        width: 19
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5263158, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2077c32613c81443a4003702d4b3dc2
+      internalID: 1810223608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GWalk4
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 222
+        width: 21
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5714286, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e32c3d1de18d294da288e91596a00bb
+      internalID: 877362523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_49
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 223
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e39e4a477b34f44b246ea77e931cc2
+      internalID: -107890745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_50
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 223
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db7991f344a26bc4ca7107bceeb1740b
+      internalID: -145939457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_51
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 223
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe70524c2eb78c544abd7355a16a7f06
+      internalID: -1653906993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_52
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 223
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a71bb1aaf1d78944b8298befc643f011
+      internalID: 2108720182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooseIdle_1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 200
+        width: 14
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47058824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564360d987eb5134b8f3b0ede3a70fe7
+      internalID: -13864824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooseIdle_2
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 200
+        width: 14
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5, y: 0.53333336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81da7f6b621d7e24db7f9a97355fc009
+      internalID: -559346644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooseSound
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 200
+        width: 13
+        height: 17
+      alignment: 9
+      pivot: {x: 0.4615385, y: 0.5294118}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db029d34b4e16324995a5a8fdc46f99b
+      internalID: -1299681190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GWalk5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 186
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e91a89a98abfa94b9069d22de186995
+      internalID: 1670414630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GWalk6
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 186
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8aaf8bf3069dcc4b906e3a15e3c8442
+      internalID: -923862457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GWalk7
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 186
+        width: 19
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5263158, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133d71051aeff7842b2a8868bd5b6fd5
+      internalID: 1464988509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooseSlingshotWalk1
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 190
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97a6d8f6d98eca84a9a8ee153c8374ce
+      internalID: 1848735641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: awdasd
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 190
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44aa237321c2c1c448c464d538330129
+      internalID: -1868174559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooseSlingshotWalk2
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 190
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07cf28ca7b57d39489c965c34fada3cc
+      internalID: 2069398291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooseSlingshotWalk3
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 190
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 967ddb2135ab27f4e8584ad146815f0f
+      internalID: 332426788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooseWalk1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 176
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b2dc7dcb2554404287764d15705c087
+      internalID: -696292980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooseWalk2
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 176
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243f69d83d5e06d469da491c7754b881
+      internalID: -2029614992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooseWalk3
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 176
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f2bdc31a75ce5459671b3d56cb4c30
+      internalID: -17982090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooseWalk4
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 176
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a425477db1ecbd4baa3da2a110b2865
+      internalID: -746930435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooseWalk5
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 176
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6105fd3a645e91a46a274de484439347
+      internalID: 814043406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooseWalk6
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 176
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1113397272c3d2a4ea4e9b3b6183338d
+      internalID: -1518280198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooseIdle1
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 151
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf39a47b511807d45a863551dbdfbd8a
+      internalID: 1074784285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooseIdle2
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 151
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c7a8364dc570c048a96616c7a2484f7
+      internalID: -813869148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_71
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 151
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 042e844655cea374f9f3a1b40913c768
+      internalID: 888340006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_72
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 151
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d6e7c43ebc75743a0615ce3ee79dc0
+      internalID: 412135041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooseSlingshotWalk4
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 148
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a9af0acecde4b64780dc7d256982e1b
+      internalID: -1790951756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooseSlingshotWalk5
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 148
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b231b17fb29ebf04a874d7a899ad35ed
+      internalID: 1027696063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooseSlingshotWalk6
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 148
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbdc2e3f44a9d6248b71340b03f58e0c
+      internalID: 523354923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooseWalk7
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 155
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6220aa1195e43540b3a78cd358ea30b
+      internalID: -1033359306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooseWalk8
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 155
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aa17d2bb077d234bb4f2006b32cf4e2
+      internalID: 1650049087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooseWalk9
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 154
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986d65fd36c402244bd746a9b33a3956
+      internalID: -1041376359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GooseWalk10
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 154
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b77c212b8216a4bb90e475681c0c68
+      internalID: -43188789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_84
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 113
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374762419219c82419884d6848222431
+      internalID: -1785282673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_92
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 60
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0372ec37d42355e45af5318f7b88f394
+      internalID: 1213633467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_93
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 59
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 534125d5f731b9446b14bff2f74d08f3
+      internalID: 904785727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_94
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 60
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a577e230e6f21a48a32af9eb2d2341d
+      internalID: 1115149913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ukz19bvd_95
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 60
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d912b9368915a2439e0be3e43cce2d3
+      internalID: 1942153872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 258
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e74dce17b0b202546bc713ac35f10ce0
+      internalID: -983502240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ukz19bvd_43: -1017088897
+      ukz19bvd_80: -1622357706
+      SlingshotWalk2: -2124377997
+      ukz19bvd_27: 1472512469
+      ukz19bvd_52: 2108720182
+      ukz19bvd_71: 888340006
+      ukz19bvd_83: 147943806
+      ukz19bvd_89: -1097307009
+      ukz19bvd_38: 236229168
+      ukz19bvd_86: 655629817
+      ukz19bvd_36: 378935147
+      ukz19bvd_29: -328159802
+      GWalk6: -923862457
+      ukz19bvd_72: 412135041
+      ukz19bvd_88: -393278270
+      SlingshotWalk4: 1702135072
+      Knife: -1761226813
+      GooseWalk5: 814043406
+      GooseSlingshotWalk: -136554871
+      GooseWalk4: -746930435
+      SlingshotWalk7: -836902397
+      ukz19bvd_33: -933188345
+      NGWalk_3: 1769230067
+      ukz19bvd_82: -146054371
+      ukz19bvd_11: -526742006
+      Stone: -983502240
+      ukz19bvd_49: -107890745
+      ukz19bvd_37: -1474072337
+      SlingshotWalk6: -1984450265
+      GWalk4: 877362523
+      GooseSound: -1299681190
+      ukz19bvd_90: 1702461137
+      SlingshotWalk3: -2106480003
+      SideIdle1: 1904682696
+      GWalk5: 1670414630
+      GooseWalk8: 1650049087
+      ukz19bvd_81: 1748546948
+      ukz19bvd_28: -2011985700
+      GooseWalk2: -2029614992
+      ukz19bvd_94: 1115149913
+      NGWalk_6: 275881594
+      GWalk3: 1810223608
+      SlingshotWalk5: -1107489183
+      NGWalk_5: -586268085
+      NGWalk_1: 2061304806
+      ukz19bvd_87: -1905701499
+      ukz19bvd_95: 1942153872
+      ukz19bvd_51: -1653906993
+      ukz19bvd_92: 1213633467
+      ukz19bvd_41: 378970960
+      GooseSlingshotWalk2: 2069398291
+      GooseIdle_2: -559346644
+      ukz19bvd_50: -145939457
+      "\xE5": 1432106279
+      GooseSlingshotWalk4: -1790951756
+      GooseWalk7: -1033359306
+      SideIdle2: 1072033401
+      ukz19bvd_39: 1468130672
+      ukz19bvd_10: 398169276
+      GooseSlingshotWalk5: 1027696063
+      SlingshotWalk1: -1909208051
+      GooseSlingshotWalk1: 1848735641
+      ukz19bvd_30: 1165575032
+      ukz19bvd_84: -1785282673
+      ukz19bvd_4: 1425965322
+      GWalk7: 1464988509
+      ukz19bvd_93: 904785727
+      ukz19bvd_9: -569585502
+      FrontIdle2: -597125777
+      ukz19bvd_35: 107423120
+      GWalk1: -1395293215
+      GooseIdle1: 1074784285
+      asdwd: -2142103754
+      ukz19bvd_44: 1841652496
+      GooseSlingshotWalk3: 332426788
+      SlingshotStill1: -1684443169
+      ukz19bvd_34: 285175877
+      NGWalk_7: -939425795
+      GooseWalk9: -1041376359
+      GooseWalk3: -17982090
+      GooseWalk10: -43188789
+      NGWalk_4: -29609011
+      SlingshotStill2: 34815702
+      ukz19bvd_42: 1072937748
+      ukz19bvd_3: 1584912741
+      FrontIdle1: -830677876
+      GooseIdle2: -813869148
+      ukz19bvd_40: -1230256708
+      GooseWalk6: -1518280198
+      ukz19bvd_12: 1821739758
+      GWalk2: 672942180
+      GooseSlingshotWalk6: 523354923
+      ukz19bvd_91: 362113030
+      GooseWalk1: -696292980
+      GooseIdle_1: -13864824
+      NGWalk_2: -75766701
+      awdasd: -1868174559
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
