@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using System.Net;
@@ -14,10 +15,13 @@ public class GameManager : MonoBehaviour
 
     public int nextLevel;
     public GameObject playerGO;
+
+    Color lerpedColor = Color.white;
     void Start()
     {
 
     }
+
 
     public void saveData()
     {
@@ -48,6 +52,6 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

@@ -47,10 +47,28 @@ public class PlayerData : MonoBehaviour
         Data.beanStalkAmmo = beanStalkAmmo;
     }
 
+
+    public void TakeDamage(int amount)
+    {
+        health -= amount;
+        if (health <= 0)
+        {
+            ResetLevel();
+            Debug.Log("Dead");
+        }
+    }
+
     public void Nextlevel()
     {
+        saveData();
         int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
         SceneManager.LoadScene(nextSceneIndex);
         level += 1;
+    }
+
+    public void ResetLevel()
+    {
+        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 0;
+        SceneManager.LoadScene(nextSceneIndex);
     }
 }
