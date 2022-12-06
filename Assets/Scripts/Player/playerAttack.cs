@@ -70,7 +70,6 @@ public class playerAttack : MonoBehaviour
                         if (enemiesToDamage[i].GetComponent<GiantEnemy>().staggered) // if giant is staggered attack
                         {
                             enemiesToDamage[i].GetComponent<GiantEnemy>().attackedWhileStaggered();
-                            Debug.Log("Hit Giant while it was staggered");
                         }
                         else
                         {
