@@ -11,6 +11,8 @@ public class Door : MonoBehaviour
     public LayerMask playerLayer;
     public int LevelSwitch;
     // Start is called before the first frame update
+
+
     void Start()
     {
         canvas.SetActive(false);

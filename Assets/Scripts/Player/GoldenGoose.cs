@@ -1,6 +1,7 @@
 using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GoldenGoose : MonoBehaviour
@@ -14,7 +15,10 @@ public class GoldenGoose : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        GM.GetComponent<PlayerData>().Nextlevel();
+        if(collision.name == "Player")
+        {
+            GM.GetComponent<PlayerData>().Nextlevel();
+        }
     }
 
 }

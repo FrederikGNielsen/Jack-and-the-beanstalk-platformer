@@ -132,8 +132,8 @@ TextureImporter:
         y: 448
         width: 16
         height: 63
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49206352}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -153,8 +153,8 @@ TextureImporter:
         y: 448
         width: 16
         height: 59
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5254237}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -923,15 +923,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: auki3w7m_39
+      name: RG_Throw13
       rect:
         serializedVersion: 2
         x: 267
         y: 187
         width: 53
         height: 63
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.24528302, y: 0.49206352}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -944,15 +944,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: auki3w7m_40
+      name: RG_Throw14
       rect:
         serializedVersion: 2
         x: 342
         y: 185
         width: 40
         height: 63
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.32500002, y: 0.49206352}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -965,15 +965,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: auki3w7m_41
+      name: RG_Throw15
       rect:
         serializedVersion: 2
         x: 418
         y: 185
         width: 28
         height: 63
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.46428573, y: 0.49206352}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -986,7 +986,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: auki3w7m_42
+      name: Boulder
       rect:
         serializedVersion: 2
         x: 470
@@ -1175,15 +1175,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: auki3w7m_51
+      name: RG_Throw12
       rect:
         serializedVersion: 2
         x: 193
         y: 53
         width: 49
         height: 63
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.26530612, y: 0.49206352}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1206,17 +1206,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      auki3w7m_31: 1404159381
-      auki3w7m_40: -929889814
+      redGiantWalk1: -1377942140
       auki3w7m_4: 1955586582
       redGiantWalk3: 1528399483
       auki3w7m_7: -86388976
+      Boulder: 369947210
       RG_Throw3: 949743149
-      auki3w7m_39: -1157921324
+      RG_Throw6: 1430884372
       auki3w7m_8: -740483633
       auki3w7m_33: 1454832554
       zzzzzzz: -1862746807
-      RG_Throw6: 1430884372
       auki3w7m_3: 374916373
       zzzz: -788080435
       auki3w7m_10: -382236273
@@ -1233,7 +1232,7 @@ TextureImporter:
       RG_Throw10: 405313532
       zzzzzz: 1563276792
       auki3w7m_26: -642083315
-      auki3w7m_41: -207321033
+      RG_Throw13: -1157921324
       RedGiantIdle1: -176548928
       zzz: -521093515
       RedGiantIdle2: 1281345126
@@ -1241,7 +1240,7 @@ TextureImporter:
       auki3w7m_29: 1264667432
       auki3w7m_0: 1364442679
       auki3w7m_22: 1170908761
-      auki3w7m_42: 369947210
+      RG_Throw12: 263036128
       redGiantWalk5: -57914755
       RG_Throw5: -593579646
       auki3w7m_27: -20742960
@@ -1251,13 +1250,14 @@ TextureImporter:
       auki3w7m_47: -1843606267
       zz: -450054546
       RG_Throw8: 1118005166
+      RG_Throw15: -207321033
       RG_Throw1: 58682246
-      auki3w7m_51: 263036128
+      RG_Throw14: -929889814
       RG_Throw11: 1610945290
       auki3w7m_6: 1184143
       RG_Throw9: -2140636061
-      redGiantWalk1: -1377942140
       redGiantWalk4: -2063722147
+      auki3w7m_31: 1404159381
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

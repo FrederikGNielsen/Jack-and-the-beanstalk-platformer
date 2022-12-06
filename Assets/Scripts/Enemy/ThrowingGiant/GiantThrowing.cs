@@ -1,15 +1,48 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 public class GiantThrowing : MonoBehaviour
 {
-    public GameObject target;
-    private Rigidbody2D rb;
-    public LayerMask playerLayer;
-    public bool hasThrown;
-    public float timeNextThrow;
+    public float speed;
+    public float health;
+
+    //Stagger variables
+    [Header("Staggered")]
+    public bool staggered;
+    public float staggerTimeLeft;
+    public float staggerTime;
+
+    public bool isIdle;
+
     public GameObject boulder;
+    public GameObject target;
+    public GameObject throwPoint;
+
+    [Header("Attacking")]
+    public bool isAttacking;
+    public float attackTimeLeft;
+    public float attackTime;
+
+    [Header("Attack wave")]
+    public bool attackWave;
+    public bool attackWaveSound;
+    //public GameObject AttackWave;
+    //public GameObject WavePosition;
+    public Animator animator;
+
+    [Header("Player Detection")]
+    public GameObject playerDetection;
+    public float playerDetectionRadius;
+    public LayerMask playerlayer;
+
+    private GameObject GM;
+
+
+
 
     Vector3 calcBallisticVelocityVector(Vector3 source, Vector3 target, float angle)
     {
@@ -27,43 +60,97 @@ public class GiantThrowing : MonoBehaviour
     }
 
 
-
-
-    public void Start()
+    void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        Debug.Log(calcBallisticVelocityVector(transform.position, target.transform.position, 250));
+        target = GameObject.Find("Player");
+        GM = GameObject.Find("GM");
     }
 
-    public void Update()
+    // Update is called once per frame
+
+    private void OnDrawGizmosSelected()
     {
-        if(Physics2D.OverlapCircle(transform.position, 5, playerLayer))
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(playerDetection.transform.position, playerDetectionRadius);
+    }
+    void Update()
+    {
+        if (isIdle)
         {
-            if(!hasThrown)
+            if (Physics2D.OverlapCircle(playerDetection.transform.position, playerDetectionRadius, playerlayer, Mathf.Infinity, Mathf.Infinity))
             {
-                
-                hasThrown = true;
-                timeNextThrow = 5;
-                Debug.Log("throw rock");
-                GameObject boulderGO = Instantiate(boulder, transform.position, Quaternion.identity);
-                rb.AddForce(calcBallisticVelocityVector(transform.position, target.transform.position, 33) * 50);
-            } else
-            {
-                if(timeNextThrow <= 0)
-                {
-                    hasThrown= false;
-                }
-            }
-            if (timeNextThrow > 0)
-            {
-                timeNextThrow -= Time.deltaTime;
+                Attack();
             }
         }
 
 
-        if(Input.GetKeyDown(KeyCode.O))
+        //if not staggered
+        if (staggered == false)
         {
-            rb.AddForce(calcBallisticVelocityVector(transform.position, target.transform.position, 33) * 50);
+            if (!isAttacking) //if not staggered or attakcing
+            {
+                isIdle = true;
+                animator.Play("RedgiantIdle");
+            }
+            else // if is attacking
+            {
+                isIdle = false;
+                if (attackTimeLeft < 0.55 && !attackWave)
+                {
+                    Debug.Log("Throw");
+                    GameObject boulderGO = Instantiate(boulder, throwPoint.transform.position, Quaternion.identity);
+                    boulderGO.GetComponent<Rigidbody2D>().AddForce(calcBallisticVelocityVector(transform.position, target.transform.position, 33) * 41);
+                    attackWave = true;
+                }
+                if (attackTimeLeft > 0)
+                {
+                    attackTimeLeft -= Time.deltaTime;
+                    animator.Play("redGiantThrow");
+                }
+                else
+                {
+                    //Debug.Log("No Longer staggered");
+                    isAttacking = false;
+                    attackWave = false;
+                }
+            }
+        }
+        else
+        {
+            if (staggerTimeLeft > 0)
+            {
+                staggerTimeLeft -= Time.deltaTime;
+                animator.Play("EnemyStaggered");
+                isIdle = false;
+            }
+            else
+            {
+                //Debug.Log("No Longer staggered");
+                staggered = false;
+                isIdle = true;
+            }
+        }
+    }
+
+    public void StaggerGiant()
+    {
+        staggered = true;
+        staggerTimeLeft = staggerTime;
+    }
+
+    public void Attack()
+    {
+        isAttacking = true;
+        attackTimeLeft = attackTime;
+    }
+
+    public void takeDamage(int amount)
+    {
+        health -= amount;
+        if (health <= 0)
+        {
+            Debug.Log("Dead");
+            Destroy(gameObject);
         }
     }
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
 
 public class PlayerData : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class PlayerData : MonoBehaviour
     void Start()
     {
         loadData();
+        stoneText = GameObject.Find("PebblesUI").GetComponentInChildren<TMPro.TMP_Text>();
     }
 
     void Update()

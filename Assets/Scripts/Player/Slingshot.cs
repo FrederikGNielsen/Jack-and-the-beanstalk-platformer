@@ -20,11 +20,10 @@ public class Slingshot : MonoBehaviour
     Vector2 direction;
 
 
-    public bool isAttacking;
+    private bool isAttacking;
     public bool isCharging;
     public bool isWalking;
     public bool carryingGoose;
-    public Animator animator;
 
     public bool canShoot;
 

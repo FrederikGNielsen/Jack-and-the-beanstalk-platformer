@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 670970492583804415}
   - component: {fileID: 670970492583804412}
   m_Layer: 11
-  m_Name: GiantEnemy
+  m_Name: GiantEnemy_Prefab
   m_TagString: Giant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
