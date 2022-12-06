@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -876,7 +876,7 @@ TextureImporter:
       Bean_Stage2: -392370351
       TreeTrunk3: -2084717169
       Grass_Flower_Red_3: -781733939
-      Grass_Normal_4: 395712846
+      Grass_Normal_1: -1517096757
       Tree Leaf3_Bottom: -1935532314
       Grass_Flower_Yellow_3: 334437931
       Grass_Flower_Yellow_2: -1852869296
@@ -904,8 +904,8 @@ TextureImporter:
       Grass_Normal_3: -1102129837
       Bean_Stage4: 381899064
       Grass_Normal_5: -1989292862
+      Grass_Normal_4: 395712846
       Grass_Flower_Red_1: -1454210786
-      Grass_Normal_1: -1517096757
       Tree Leaf2_Top: 1954156326
   spritePackingTag: 
   pSDRemoveMatte: 0

@@ -58,6 +58,16 @@ public class PlayerData : MonoBehaviour
         }
     }
 
+    public void addPebbles(int amount)
+    {
+        pebbles += amount;
+    }
+
+    public void removePebbles(int amount)
+    {
+        pebbles -= amount;
+    }
+
     public void Nextlevel()
     {
         saveData();

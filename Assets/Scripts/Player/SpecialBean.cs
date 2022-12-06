@@ -15,7 +15,7 @@ public class SpecialBean : MonoBehaviour
 
     public bool PointLeft;
 
-
+    public LayerMask layer;
 
     void Start()
     {
@@ -27,15 +27,18 @@ public class SpecialBean : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(rb.velocity.magnitude < 0.05f)
+        if(rb.velocity.magnitude < 0.15f)
         {
-            rb.Sleep();
-            SpawnSpecialBean(GameObject.FindWithTag("Player").GetComponent<LookAtMouse>().PointLeft);
-            Destroy(this.gameObject);
+            if(Physics2D.OverlapCircle(transform.position, 0.1f, layer)) 
+            {
+                rb.Sleep();
+                SpawnSpecialBean(GameObject.FindWithTag("Player").GetComponent<LookAtMouse>().PointLeft);
+                Destroy(this.gameObject);
+            }
         }
     }
 
-
+    
 
     public void SpawnSpecialBean(bool isPointingLeft)
     {

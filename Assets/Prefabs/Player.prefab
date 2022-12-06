@@ -5181,7 +5181,7 @@ MonoBehaviour:
   isWalking: 0
   carryingGoose: 0
   animator: {fileID: 0}
-  canShoot: 0
+  canShoot: 1
   point: {fileID: 8995351513570595672, guid: e7ffeecd94d7bc8429dfab4e913c7097, type: 3}
   numberOfPoints: 12
   spaceBetweenPoints: 0.05
