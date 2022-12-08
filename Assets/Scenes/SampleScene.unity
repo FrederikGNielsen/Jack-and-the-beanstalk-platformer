@@ -244,9 +244,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2976811428411904160, guid: 3daa5259ed6f1734e8b83b45ffb61bb7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3014846891151245345, guid: 3daa5259ed6f1734e8b83b45ffb61bb7, type: 3}
       propertyPath: m_Name
       value: Tilemap_prefab_Collision
+      objectReference: {fileID: 0}
+    - target: {fileID: 3014846891151245345, guid: 3daa5259ed6f1734e8b83b45ffb61bb7, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4239099113407955129, guid: 3daa5259ed6f1734e8b83b45ffb61bb7, type: 3}
       propertyPath: m_RootOrder
