@@ -7,9 +7,7 @@ using UnityEngine.UIElements;
 
 public class SpecialBean : MonoBehaviour
 {
-    private float fallTime;
     public Rigidbody2D rb;
-    private bool sleeping;
 
     public GameObject specialBean;
 
@@ -20,8 +18,6 @@ public class SpecialBean : MonoBehaviour
     void Start()
     {
         rb.mass = 10.0f;
-        sleeping = false;
-        fallTime = 0.0f;
     }
 
     // Update is called once per frame
