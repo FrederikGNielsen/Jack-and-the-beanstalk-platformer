@@ -24,6 +24,12 @@ public class PlayerMovement : MonoBehaviour
     public bool isCursorCenter;
     public bool isWalking;
 
+    //Audio
+    public AudioSource aSource;
+    public AudioClip JumpSound;
+    public AudioClip AttackSwoosh;
+
+
     void Update()
     {
         //Left and Right input
@@ -62,6 +68,8 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && mayJump > 0.1) //if player hit the jump button with coyote time
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
+            aSource.clip = JumpSound;
+            aSource.Play();
             mayJump = 0;
         }
 

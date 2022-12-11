@@ -8,14 +8,17 @@ public class BossAttack : MonoBehaviour
 
     public float timer;
 
-    public bool RandomStomp;
+    private bool RandomStomp;
+    private bool footIsUp;
+    private bool isStomping;
 
-    public bool footIsUp;
+    private GameObject bParent;
 
     public GameObject Indicator;
 
     public void Start()
     {
+        bParent = GameObject.Find("BossParent");
         animator = GetComponent<Animator>();
         Indicator.SetActive(false);
         RandomAttack();
@@ -24,30 +27,77 @@ public class BossAttack : MonoBehaviour
 
     private void Update()
     {
-        if(RandomStomp)
+        if (RandomStomp)
         {
             //Bools
-            footIsUp= false;
+            footIsUp = false;
 
 
-            Indicator.SetActive(true);
             Indicator.transform.position = new Vector3(gameObject.transform.position.x, Indicator.transform.position.y, Indicator.transform.position.z);
             if (timer > 0)
             {
                 timer -= Time.deltaTime;
-            } else
+            }
+            else
             {
                 Indicator.SetActive(false);
                 animator.Play("BossIdle");
             }
 
-            if(timer < 9 && timer > 8.5f && !footIsUp)
+            //Idle when in air
+            if (timer < 9 && timer > 8.5f && !footIsUp)
             {
                 footIsUp = true;
                 animator.Play("BossFootUp");
             }
 
+            //stomp after certain amount of time
+            if (timer < 6 && timer > 5.5f && !isStomping)
+            {
+                Indicator.SetActive(true);
+                isStomping = true;
 
+                //Random number for random transform
+                float randomX = Random.Range(15.00f, 25.00f);
+
+                //Changes transform x to something random
+                bParent.transform.position = new Vector3(randomX, bParent.transform.position.y, bParent.transform.position.z);
+
+                //Animation
+                animator.Play("RandomStompDown");
+            }
+
+            //When boss stomps idle for a few seconds
+            if (timer < 5.8f && timer > 5f)
+            {
+                //Animation
+                animator.Play("BossIdle");
+            }
+            if (timer < 3f && timer > 2.8f)
+            {
+                //Animation
+                animator.Play("RandomStompUp");
+            }
+
+
+            if (timer < 2f && timer > 1.9f)
+            {
+                //Animation
+                bParent.transform.position = new Vector3(28.4f, bParent.transform.position.y, bParent.transform.position.z);
+                isStomping = true;
+                animator.Play("RandomStompDown");
+            }
+            if (timer < 1.8f && timer > 1f)
+            {
+                //Animation
+                animator.Play("BossIdle");
+            }
+            if (timer < 0.1f && timer > 0f)
+            {
+                //Animation
+                RandomStomp = false;
+                RandomAttack();
+            }
         }
     }
 
@@ -60,7 +110,7 @@ public class BossAttack : MonoBehaviour
             Debug.Log("Attack 1");
 
             animator.Play("RandomStompUp");
-
+            isStomping = false;
             RandomStomp = true;
             timer = 10f;
         }
