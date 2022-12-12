@@ -10,10 +10,10 @@ scopes = {
 	"last_search.DA949528" = ""
 	"OpenInspectorPreview.DA949528" = "0"
 	"currentGroup.DA949528" = "all"
-	"last_search.2138236A" = "GrassSlope"
+	"last_search.2138236A" = ""
 	"OpenInspectorPreview.2138236A" = "0"
 	"currentGroup.2138236A" = "asset"
-	"last_search.F8949528" = "gooseslin"
+	"last_search.F8949528" = "spike"
 	"OpenInspectorPreview.F8949528" = "0"
 	"currentGroup.F8949528" = "all"
 }
@@ -62,6 +62,13 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"s"
+	"re"
+	"RedGiantIdle1"
+	"R"
+	"r"
+	"redGiantWalk1"
+	"Re"
 	"GrassSlopeLeft"
 	"S"
 	"D"
@@ -72,7 +79,6 @@ recentSearches = [
 	"GooseIdle_1"
 	"id"
 	"Go"
-	"s"
 	"i"
 ]
 searchItemFavorites = [

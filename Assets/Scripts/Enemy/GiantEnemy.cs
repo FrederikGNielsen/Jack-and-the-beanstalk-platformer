@@ -2,6 +2,7 @@ using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 public class GiantEnemy : MonoBehaviour
@@ -79,8 +80,7 @@ public class GiantEnemy : MonoBehaviour
         {
             if (Physics2D.OverlapCircle(playerDetection.transform.position, playerDetectionRadius, playerlayer, Mathf.Infinity, Mathf.Infinity))
             {
-                Attack();
-                Debug.Log("Detected Player");
+                Angry();
             }
 
 
@@ -242,7 +242,8 @@ public class GiantEnemy : MonoBehaviour
 
     public void attackedWhileStaggered()
     {
-
+        Debug.Log("Attacked while staggered! 123123123");
+        takeDamage(5);
     }
 
     public void attackeWhileNotStaggered()
@@ -251,6 +252,16 @@ public class GiantEnemy : MonoBehaviour
         {
             Attack();
 
+        }
+    }
+
+    public void takeDamage(int amount)
+    {
+        health -= amount;
+        if(health <= 0)
+        {
+            Debug.Log("Dead");
+            Destroy(gameObject);
         }
     }
 }

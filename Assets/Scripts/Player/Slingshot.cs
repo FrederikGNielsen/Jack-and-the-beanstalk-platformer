@@ -20,11 +20,10 @@ public class Slingshot : MonoBehaviour
     Vector2 direction;
 
 
-    public bool isAttacking;
+    private bool isAttacking;
     public bool isCharging;
     public bool isWalking;
     public bool carryingGoose;
-    public Animator animator;
 
     public bool canShoot;
 
@@ -32,7 +31,8 @@ public class Slingshot : MonoBehaviour
     private float totalTime;
 
     private GameObject AM;
-    
+    private GameObject GM;
+
 
     //UI
 
@@ -47,6 +47,7 @@ public class Slingshot : MonoBehaviour
     void Start()
     {
         AM = GameObject.Find("AnimationManager");
+        GM = GameObject.Find("GM");
         points = new GameObject[numberOfPoints];
         for (int i = 0; i < numberOfPoints; i++)
         {
@@ -91,15 +92,16 @@ public class Slingshot : MonoBehaviour
                         }
                         else
                         {
-                            chargeTime += Time.deltaTime;
+                            chargeTime += Time.deltaTime;   
                             projectileForce = chargeTime * 1.5f + 2;
                             projectileForce = Mathf.Clamp(projectileForce, 2, 4);
                         }
                     }
                     if (Input.GetMouseButtonUp(1))
                     {
+                        GM.GetComponent<PlayerData>().removePebbles(1);
                         isCharging = false;
-                        AM.GetComponent<AnimationManager>().isCharging = false;
+                        AM.GetComponent<AnimationManager>().isCharging = false; 
                         Shoot();
                         chargeTime = 0.0f;
                         projectileForce = chargeTime;

@@ -7,35 +7,34 @@ using UnityEngine.UIElements;
 
 public class SpecialBean : MonoBehaviour
 {
-    private float fallTime;
     public Rigidbody2D rb;
-    private bool sleeping;
 
     public GameObject specialBean;
 
     public bool PointLeft;
 
-
+    public LayerMask layer;
 
     void Start()
     {
         rb.mass = 10.0f;
-        sleeping = false;
-        fallTime = 0.0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(rb.velocity.magnitude < 0.05f)
+        if(rb.velocity.magnitude < 0.15f)
         {
-            rb.Sleep();
-            SpawnSpecialBean(GameObject.FindWithTag("Player").GetComponent<LookAtMouse>().PointLeft);
-            Destroy(this.gameObject);
+            if(Physics2D.OverlapCircle(transform.position, 0.1f, layer)) 
+            {
+                rb.Sleep();
+                SpawnSpecialBean(GameObject.FindWithTag("Player").GetComponent<LookAtMouse>().PointLeft);
+                Destroy(this.gameObject);
+            }
         }
     }
 
-
+    
 
     public void SpawnSpecialBean(bool isPointingLeft)
     {
