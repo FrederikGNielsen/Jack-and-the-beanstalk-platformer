@@ -120,7 +120,7 @@ public class GiantThrowing : MonoBehaviour
             if (staggerTimeLeft > 0)
             {
                 staggerTimeLeft -= Time.deltaTime;
-                animator.Play("EnemyStaggered");
+                animator.Play("StaggerRedGiant");
                 isIdle = false;
             }
             else

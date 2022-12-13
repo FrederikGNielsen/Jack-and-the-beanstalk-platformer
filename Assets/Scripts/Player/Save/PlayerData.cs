@@ -17,6 +17,7 @@ public class PlayerData : MonoBehaviour
     public int beanStalkAmmo;
 
     public TMPro.TMP_Text stoneText;
+    public TMPro.TMP_Text healthText;
 
     //UI
     public 
@@ -25,11 +26,13 @@ public class PlayerData : MonoBehaviour
     {
         loadData();
         stoneText = GameObject.Find("PebblesUI").GetComponentInChildren<TMPro.TMP_Text>();
+        healthText = GameObject.Find("HealthUI").GetComponentInChildren<TMPro.TMP_Text>();
     }
 
     void Update()
     {
         stoneText.text = "Pebbles: " + pebbles;
+        healthText.text = "Health: " + health;
     }
 
     public void loadData()

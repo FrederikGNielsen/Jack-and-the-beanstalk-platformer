@@ -72,6 +72,17 @@ public class Slingshot : MonoBehaviour
         direction = mousePos - slingshotPos;
         transform.right = direction;
 
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            if(normalBullet)
+            {
+                normalBullet = false;
+            } else
+            {
+                normalBullet = true;
+            }
+        }
+
 
         //Slingshot charge
         if (Stones > 0)

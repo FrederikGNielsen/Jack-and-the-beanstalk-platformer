@@ -58,7 +58,7 @@ public class BossAttack : MonoBehaviour
                 isStomping = true;
 
                 //Random number for random transform
-                float randomX = Random.Range(15.00f, 25.00f);
+                float randomX = Random.Range(55.00f, 85.00f);
 
                 //Changes transform x to something random
                 bParent.transform.position = new Vector3(randomX, bParent.transform.position.y, bParent.transform.position.z);

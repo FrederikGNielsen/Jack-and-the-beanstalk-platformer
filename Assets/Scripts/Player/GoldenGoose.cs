@@ -6,18 +6,19 @@ using UnityEngine;
 
 public class GoldenGoose : MonoBehaviour
 {
-    public GameObject GM;
+    public GameObject AM;
 
     // Update is called once per frame
     void Start()
     {
-        GM = GameObject.Find("GM");
+        AM = GameObject.Find("AnimationManager");
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.name == "Player")
         {
-            GM.GetComponent<PlayerData>().Nextlevel();
+            AM.GetComponent<AnimationManager>().isCarryingGoose = true;
+            Destroy(gameObject);
         }
     }
 

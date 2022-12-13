@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01cc676a5dcf1794ab1529d2e4ec3471, type: 3}
   m_Name: Data
   m_EditorClassIdentifier: 
-  health: 25
+  health: 100
   pebbles: 25
   level: 0
   beanStalkAmmo: 25
