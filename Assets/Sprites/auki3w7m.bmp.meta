@@ -671,15 +671,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: auki3w7m_27
+      name: Stagger1
       rect:
         serializedVersion: 2
         x: 139
         y: 315
         width: 21
         height: 68
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.42857143, y: 0.45588234}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -692,15 +692,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: auki3w7m_28
+      name: Stagger2
       rect:
         serializedVersion: 2
         x: 167
         y: 315
         width: 19
         height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.42105263, y: 0.47692308}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -734,15 +734,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: auki3w7m_30
+      name: Stagger3
       rect:
         serializedVersion: 2
         x: 194
         y: 314
         width: 18
         height: 67
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.44444445, y: 0.46268657}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -818,15 +818,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: auki3w7m_34
+      name: Stagger4
       rect:
         serializedVersion: 2
         x: 218
         y: 314
         width: 16
         height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5625, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1208,6 +1208,7 @@ TextureImporter:
     nameFileIdTable:
       redGiantWalk1: -1377942140
       auki3w7m_4: 1955586582
+      Stagger2: -668567363
       redGiantWalk3: 1528399483
       auki3w7m_7: -86388976
       Boulder: 369947210
@@ -1220,17 +1221,16 @@ TextureImporter:
       zzzz: -788080435
       auki3w7m_10: -382236273
       RG_Throw4: -1584992356
+      Stagger4: 296761313
       auki3w7m_25: -653270829
       auki3w7m_9: -1566172491
-      auki3w7m_28: -668567363
-      auki3w7m_34: 296761313
       RG_Throw2: 1447008848
-      auki3w7m_30: -95344046
-      auki3w7m_5: -1510373374
-      redGiantWalk2: -1944981946
       RG_Throw7: 566460925
       RG_Throw10: 405313532
+      auki3w7m_5: -1510373374
+      redGiantWalk2: -1944981946
       zzzzzz: 1563276792
+      Stagger1: -20742960
       auki3w7m_26: -642083315
       RG_Throw13: -1157921324
       RedGiantIdle1: -176548928
@@ -1243,7 +1243,6 @@ TextureImporter:
       RG_Throw12: 263036128
       redGiantWalk5: -57914755
       RG_Throw5: -593579646
-      auki3w7m_27: -20742960
       auki3w7m_23: -70087178
       auki3w7m_21: 1060104811
       auki3w7m_24: 2069271691
@@ -1251,6 +1250,7 @@ TextureImporter:
       zz: -450054546
       RG_Throw8: 1118005166
       RG_Throw15: -207321033
+      Stagger3: -95344046
       RG_Throw1: 58682246
       RG_Throw14: -929889814
       RG_Throw11: 1610945290

@@ -36,7 +36,16 @@ public class Projectile : MonoBehaviour
             Debug.Log("Hit Giant with " + force);
             if(force > 7)
             {
-                collision.GetComponent<GiantEnemy>().StaggerGiant();
+                if(collision.GetComponent<GiantEnemy>() != null)
+                {
+                    collision.GetComponent<GiantEnemy>().StaggerGiant();
+                    Debug.Log("Stagger Normal Giant");
+                } else
+                {
+                    collision.GetComponent<GiantThrowing>().StaggerGiant();
+                    Debug.Log("Stagger Red Giant");
+                }
+                Destroy(gameObject);
             }
         }
     }

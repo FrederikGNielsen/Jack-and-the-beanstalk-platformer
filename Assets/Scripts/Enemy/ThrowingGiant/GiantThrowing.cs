@@ -62,6 +62,7 @@ public class GiantThrowing : MonoBehaviour
 
     void Start()
     {
+        StaggerGiant();
         target = GameObject.Find("Player");
         GM = GameObject.Find("GM");
     }
@@ -82,6 +83,13 @@ public class GiantThrowing : MonoBehaviour
                 Attack();
             }
         }
+
+        if(health <= 0)
+        {
+            Destroy(gameObject);
+        }
+
+
 
 
         //if not staggered
@@ -119,8 +127,9 @@ public class GiantThrowing : MonoBehaviour
         {
             if (staggerTimeLeft > 0)
             {
+                staggered = true;
                 staggerTimeLeft -= Time.deltaTime;
-                animator.Play("EnemyStaggered");
+                animator.Play("RedGiantStagger");
                 isIdle = false;
             }
             else
@@ -131,6 +140,8 @@ public class GiantThrowing : MonoBehaviour
             }
         }
     }
+
+
 
     public void StaggerGiant()
     {

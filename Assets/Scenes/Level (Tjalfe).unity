@@ -503,6 +503,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 367580940712821515, guid: 8a1865c1161ca8643827dc93b8732df2, type: 3}
+      propertyPath: LevelSwitch
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 367580940712821750, guid: 8a1865c1161ca8643827dc93b8732df2, type: 3}
       propertyPath: m_Name
       value: Door
@@ -26632,7 +26636,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5839182286976641052}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.38, y: 0.4, z: 0}
+  m_LocalPosition: {x: -100.963, y: -17.991, z: 0}
   m_LocalScale: {x: 1.5, y: 1.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
