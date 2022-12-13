@@ -124,7 +124,7 @@ MonoBehaviour:
   health: 0
   staggered: 0
   staggerTimeLeft: 0
-  staggerTime: 0
+  staggerTime: 5
   isIdle: 0
   boulder: {fileID: 3313593885024700099, guid: 46f0c106f6aee984aab114ccc2c0620a, type: 3}
   target: {fileID: 0}

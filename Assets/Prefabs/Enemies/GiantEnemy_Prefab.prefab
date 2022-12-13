@@ -293,6 +293,9 @@ MonoBehaviour:
   animator: {fileID: 670970492583804411}
   playerDetection: {fileID: 670970492408310292}
   playerDetectionRadius: 1.91
+  playerlayer:
+    serializedVersion: 2
+    m_Bits: 8
   CollisionDetectionWall: {fileID: 670970493871428523}
   CollisionDetectionFloor: {fileID: 670970493771706070}
   CollisionDetectionnRadius: 0.1
